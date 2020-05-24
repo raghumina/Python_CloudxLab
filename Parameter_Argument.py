@@ -15,11 +15,12 @@
 def my_function(number):
     xyz = number
     xyz_str = str(number)
-    xyz_str = xyz_str+"cloudxlab"
+    xyz_str = xyz_str + "cloudxlab"
     print(xyz_str)
-#my_function(10)
-my_function(10)
 
+
+# my_function(10)
+my_function(10)
 
 # problem 2
 # Define a function with name new_function that takes an argument num and returns its multiplication with π.
@@ -33,10 +34,13 @@ import math
 
 def new_function(num):
     return num * math.pi
-def void_function(num1, num2):
-   print(new_function(math.pow(num1, num2)))
 
-#new_function(2)
+
+def void_function(num1, num2):
+    print(new_function(math.pow(num1, num2)))
+
+
+# new_function(2)
 
 # Problem 3
 # Define a function with name input_name that displays a prompt, "What am I studying?"
@@ -52,11 +56,16 @@ def input_name():
     return subject
     subject = (i)
 
+
 input_name()
+
+
 # the other way of doing this is
 
 def input_name():
     return (input("What am I studying?"))
+
+
 subject = input_name()
 input_name()
 
@@ -66,22 +75,23 @@ input_name()
 
 # Define a function with the name bool_func which take 4 arguments as num1, num2, num3, num4.
 # Inside the function, write statements to check,
-#1.) if num1 is greater than num2 and store result in exp1 after converting it into str
-#2.) if num1 is equal to num3 and store result in exp2 after converting it into str
-#3.) if num2 is less than or equal to num3 and store result in exp3 after converting it into str
-#4.) if num4 is not equal to num1 and store the result in exp4 after converting it into str
-#5.) Return the value which is the concatenation of exp1, exp2, exp3, and exp4 respectively.
-#If you call the function like this: bool_func(1,2,3,4), it should return 'FalseFalseTrueTrue'
+# 1.) if num1 is greater than num2 and store result in exp1 after converting it into str
+# 2.) if num1 is equal to num3 and store result in exp2 after converting it into str
+# 3.) if num2 is less than or equal to num3 and store result in exp3 after converting it into str
+# 4.) if num4 is not equal to num1 and store the result in exp4 after converting it into str
+# 5.) Return the value which is the concatenation of exp1, exp2, exp3, and exp4 respectively.
+# If you call the function like this: bool_func(1,2,3,4), it should return 'FalseFalseTrueTrue'
 
 
-
-def bool_func(num1,num2,num3,num4):
+def bool_func(num1, num2, num3, num4):
     exp1 = str(num1 > num2)
     exp2 = str(num1 == num3)
     exp3 = str(num2 <= num3)
     exp4 = str(num4 != num1)
     return (exp1 + exp2 + exp3 + exp4)
-bool_func(1,2,3,4)
+
+
+bool_func(1, 2, 3, 4)
 
 
 # Problem 5
@@ -97,32 +107,35 @@ bool_func(1,2,3,4)
 # You can test your function by calling it using different arguments and printing the result.
 # See if it returns the appropriate result.
 
-def conditional_statements(num1,num2,num3,num4):
-   if num1 < num2 and num1 > num3 or num1 == num4:
-       num3 < num2
-       num3 < num1
-       num3 < num4
-       num2 = float()
-       num3 = int()
-       num4 = int()
-       num1 = int()
-       print(num1+num2+num3+num4)
-   else:
+def conditional_statements(num1, num2, num3, num4):
+    if num1 < num2 and num1 > num3 or num1 == num4:
+        num3 < num2
+        num3 < num1
+        num3 < num4
+        num2 = float()
+        num3 = int()
+        num4 = int()
+        num1 = int()
+        print(num1 + num2 + num3 + num4)
+    else:
         print("what have i done")
-#print(conditional_statements(1,2.3,0,4))
+
+
+# print(conditional_statements(1,2.3,0,4))
 
 
 # another way of doing this is
-def conditional_statement(num1,num2,num3,num4):
+def conditional_statement(num1, num2, num3, num4):
     if num1 < num2 and num1 > num3 and num1 == num4:
         if num3 < num1 or num2 or num4:
-            if(num2(type(float))):
-                if(num1 and num3 and num4(type(int()))):
-                    print(num1+num2+num3+num4)
+            if (num2(type(float))):
+                if (num1 and num3 and num4(type(int()))):
+                    print(num1 + num2 + num3 + num4)
     else:
         return None
 
-print(conditional_statement(1,2.3,0,4))
+
+print(conditional_statement(1, 2.3, 0, 4))
 
 
 # one more way is
