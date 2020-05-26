@@ -52,7 +52,6 @@ for numbers in [1, 2, 3, 4, 5, 6, 7, 8, 9, 7, 6, 5, 4, 4, 3, 2, 2]:
     if numbers > 5:
         print("the larger numbers are")
 
-
 print("get the answer")
 
-# same method we can apply for the smaller numbers 
+# same method we can apply for the smaller numbers
