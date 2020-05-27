@@ -56,9 +56,59 @@ print(name.upper())  # it will convert all the letters in the upper case
 name_1 = "MESSI"
 print(name.lower())  # lower will convert al the letters in the lower case
 
-#dir(name)  # ????
-#print(dir(name))  # it will shows the methods
+# dir(name)  # ????
+# print(dir(name))  # it will shows the methods
 
 # lets use some of this methods
 print("hello how are you ".split())  # it will split up all the words in the sentence
 
+print('$'.join("They  will   do waht    they waaant".split()))  # this will join the words with
+# we can use other characters also
+
+name = 'Raghu'  # tell weather a string or word is present in string or not
+print('r' in name)  # its a boolean check yes or no or True or False
+
+# program to compare the strings
+
+name = "banana"
+# string comparision
+if name == 'banana':
+    print("ohk its banana")
+if name < "banana":
+    print("your word", name, "comes before banana")
+elif name > "banana":
+    print("your word", name, "comes after banana")
+else:
+    print("ohk banana")
+
+# another example
+fruit1 = "apple"
+fruit2 = "banana"
+print(fruit1 > fruit2)  # the comparision is based upon the ascaii values
+
+# to remove the whiteapaces from the strings
+
+name = "      hello "
+print(name.strip())  # the strip function will clear all the spaces from both sides
+
+# and the lstrip() and rstrip() used to remove the spaces from the respective sides
+# for example
+name = "      hello    "
+print(name.rstrip())  # remove spaces from right side
+
+print(name.lstrip())  # remove spaces from the left side
+
+# prefixes function
+line = "Today is a great day"
+print(line.startswith('T'))  # the output will be True
+
+print(line.startswith('t'))  # if we give 't' the output will be False
+
+print(line.endswith('y')) #this will give weather the end of line is True or False according to given condition
+
+# to locate the special character or letters we use find functon
+# for exampple
+
+line1 = "waht are you doing @ bus station "
+position = line1.find('@')
+print(position)  # the @ is present at the 19th position
