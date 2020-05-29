@@ -150,6 +150,7 @@ print(a)
 # Sample Output -
 # It should return None
 # abhinav@cloudxlab.com
+'''
 
 def email_func(content):
     position = content.find('@')
@@ -169,7 +170,7 @@ def email_func(content):
 
 
 print(email_func("google@google.com"))
-
+'''
 # Problem 8
 
 # Define a function with the name str_list_func that takes an argument (assume str).
@@ -181,4 +182,10 @@ print(email_func("google@google.com"))
 # Sample Output: 'I ma gearninl nythoP ta bloudxLaC'
 
 def str_list_func(assume_str):
-    
+    position = assume_str[1] = assume_str [-1]
+    print(assume_str)
+    return
+assume_str = "raghu"
+print(str_list_func(assume_str))
+
+print(assume_str())
