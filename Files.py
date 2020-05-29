@@ -3,4 +3,4 @@
 
 # lets try
 
-file = open("cloudxlab.txt")
+file = open("C:/Users/ashok/Desktop/BOOKS/Complete ML in R/1. Linear Regression/Customer.csv")
