@@ -112,7 +112,6 @@ print(sum_str_func("12345"))
 
 '''
 
-
 # Problem 5
 # Define a function with the name slicing_func that takes an argument (assume string)
 # It should print the result after slicing the string without mentioning both the 1st and 2nd elements.
@@ -121,7 +120,7 @@ print(sum_str_func("12345"))
 #
 # Sample Output:
 # llo World
-
+'''
 def slicing_func(a):
     value = str(a)
     print(a[2:])
@@ -135,6 +134,8 @@ print(slicing_func("Hello World"))
 a = "cloudxlab"
 a[1] = 'm'
 print(a)
+
+'''
 
 
 # Problem 7
@@ -150,3 +151,34 @@ print(a)
 # It should return None
 # abhinav@cloudxlab.com
 
+def email_func(content):
+    position = content.find('@')
+    index = position
+    if position != -1:
+        while index >= 0 and content[index] != ' ':
+            index -= 1
+        first_part = content[index + 1:position]
+        ending_position = content.find(' ', position)
+        if ending_position == -1:
+            second_part = content[position:]
+        else:
+            second_part = content[position:ending_position]
+        return first_part + second_part
+    else:
+        return None
+
+
+print(email_func("google@google.com"))
+
+# Problem 8
+
+# Define a function with the name str_list_func that takes an argument (assume str).
+# Interchanges the 1st and last letter of each word in that argument and then return the resulting string.
+# i.e. l and g in leaning should be interchanged with each other
+# and rest of the letters in that word should remain at their position only (learning will become gearninl)
+
+# Sample Input: 'I am learning Python at CloudxLab'
+# Sample Output: 'I ma gearninl nythoP ta bloudxLaC'
+
+def str_list_func(assume_str):
+    
