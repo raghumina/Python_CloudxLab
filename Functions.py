@@ -5,7 +5,7 @@
 # which takes one argument with name num and returns its multiplication with itself.
 # If the argument passed during the function call is not valid for multiplication,
 # return a str with content invalid number.
-
+'''
 def except_func(num):
     try:
         num = float(input("Enter a number:\n"))
@@ -31,5 +31,22 @@ def void_function(num1, num2):
 
 void_function(4.6, 7.3)
 
+'''
+
+
+def add(x,y,z):
+    a = x+y+z
+    return a
+
+print(add(1,2,3))
+
+
+def do_math(a, b, kind='add'):
+    if (kind=='add'):   # if this condition is true then the output will be a + b other wise else condition will run
+        return a+b
+    else:
+        return a-b
+
+do_math(1, 2)
 
 
