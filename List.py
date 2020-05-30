@@ -37,3 +37,16 @@ for stock in [1,2,3,2,4,7,5,4,6,8,9,6]:
         the_stock = stock
         print(the_stock,stock)
 print("you should sell",the_stock,"for maximum profit")
+
+
+# finding even numbers in a list
+
+list = []
+for number in range (1,1000):
+    if number % 2 == 0:
+        print(number)
+        list.append(number)
+
+
+print(list)
+
