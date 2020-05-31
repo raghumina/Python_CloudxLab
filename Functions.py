@@ -34,19 +34,33 @@ void_function(4.6, 7.3)
 '''
 
 
-def add(x,y,z):
-    a = x+y+z
+def add(x, y, z):
+    a = x + y + z
     return a
 
-print(add(1,2,3))
+
+print(add(1, 2, 3))
 
 
 def do_math(a, b, kind='add'):
-    if (kind=='add'):   # if this condition is true then the output will be a + b other wise else condition will run
-        return a+b
+    if (kind == 'add'):  # if this condition is true then the output will be a + b other wise else condition will run
+        return a + b
     else:
-        return a-b
+        return a - b
+
 
 do_math(1, 2)
 
 
+# LABELED PARAMETERS IN FUNCTIONS
+# For example
+
+def add_num(x, y, z='None'):
+    if z == 'None':
+        return x + y
+    else:
+        return x + y + z
+
+
+print(add_num(1, 2))
+print(add_num(1, 2, 3))
