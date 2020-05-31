@@ -1,4 +1,5 @@
 # NumPy library
+# the numerical python library
 # A library which is used in python for arrays and matrices
 
 import numpy as np
@@ -29,3 +30,8 @@ b =  [1, 2, 3]
 c = a + b
 print(c)
 print( type(lambda x: x+1))
+
+# creating a 6x6 matrix
+
+array = np.array(0,35,)
+print(array)
