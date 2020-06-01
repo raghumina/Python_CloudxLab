@@ -17,3 +17,7 @@ sports = {'France': 'Football',
 
 s = pd.Series(sports)
 print(s)
+
+# loc and iloc are attributes not methods
+print(s.iloc[3])  # this attribute will lock the 3rd value in the sports series
+print(s.loc['Hockey'])
