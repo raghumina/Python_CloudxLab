@@ -1,7 +1,7 @@
 # Dictionaries and tuples in python
 p = "hello"
 print(len(p))
-
+'''
 names = ['harry', 'ron', 'guy', 'lee']
 print("hello", names)
 for names in names:
@@ -82,3 +82,61 @@ for person in people:
 # option 2
 list(map(split_title_and_name, people)) == list(
     map(lambda person: person.split()[0] + ' ' + person.split()[-1], people))
+
+
+d = {"apples" : 2, "bananas" : 3, "carrots" : 12}
+print(d.get("oranges", 0))
+for fruit in d:
+    print(fruit)
+
+'''
+# problem
+# Define a function with the name dict_func that takes one argument (assume string)
+# and returns a dictionary with keys as words in the string and
+# values as the number of times those words occur in the string.
+#
+# You can assume that the string will always have at least one word.
+#
+# Sample Input -
+#
+# dict_func('the quick brown fox jumps over the lazy dog')
+'''
+def dict_func(string):
+    l = string.split(" ")
+    d = dict()
+    for word in l:
+        if(d.get(word)):
+            d[word] += 1
+        else:
+            d[word] = 1
+    return d
+
+
+print(dict_func("hekko how are you are you ohk ok "))
+
+# working with tuples 
+# another simple problems are
+t = (12,323, 'd', [1,23], False)
+t = (1)
+print(type(t))
+
+
+t1 = tuple("1,2,3,4,5")
+t2 = tuple([1,2,3,4,5])
+t3 = tuple((1,2,3,4,5))
+# enter the number of each elements in the tuples
+print(len(t1))
+print(len(t2))
+print(len(t3))
+'''
+
+# tuples
+t = (1,3,5,2,54,34,2,34,5)
+l = len(t)
+t = (1,3,5,2,54,34,2,34,5)
+l = len(t)
+print(t[l-2])   # well the result will be 34
+t2 = t[2:5]
+print(t2)
+t3 = t[1:3] + t2[:]
+print(t3)
