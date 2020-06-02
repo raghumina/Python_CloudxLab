@@ -44,43 +44,91 @@ df = pd.DataFrame([player_1, player_2, player_3, player_4], index = ['Attacker',
 df.head()
 print(df.head())
 
-'''
+
 # An another record
 # sales record
 
 import pandas as pd
-purchase_1 = pd.Series ({'Shop':'Cothes',
-                         'item_buy':'Shirt',
-                         'Price':2500})
-purchase_2 = pd.Series ({'Shop':'Toys',
-                         'item_buy':'Car',
-                         'Price':25})
-purchase_3 = pd.Series ({'Shop':'Books',
-                         'item_buy':'book',
-                         'Price':250})
-purchase_4 = pd.Series ({'Shop':'Cothes',
-                         'item_buy':'Jeans',
-                         'Price':25000})
-purchase_5 = pd.Series ({'Shop':'Books',
-                         'item_buy':'Novel',
-                         'Price':350})
-purchase_6 = pd.Series ({'Shop':'Cothes',
-                         'item_buy':'Trousers',
-                         'Price':1500})
-purchase_7 = pd.Series ({'Shop':'Colors',
-                         'item_buy':'Paint',
-                         'Price':4570})
-purchase_8 = pd.Series ({'Shop':'Stationary',
-                         'item_buy':'Pens',
-                         'Price':25})
-purchase_9 = pd.Series ({'Shop':'Cothes',
-                         'item_buy':'Jacket',
-                         'Price':5000})
-df = pd.DataFrame([purchase_1,purchase_2,purchase_3,purchase_4,purchase_5,purchase_6,purchase_7,purchase_8,purchase_9],
-                  index = ['Clothes_Shop','Toy_Shop','Book_Shop','Clothes_Shop','Book_Shop','Clothes_Shop','Color_Shop',
-                           'Stationary_Shop','Clothes_Shop'])
+
+purchase_1 = pd.Series({'Shop': 'Cothes',
+                        'item_buy': 'Shirt',
+                        'Price': 2500})
+purchase_2 = pd.Series({'Shop': 'Toys',
+                        'item_buy': 'Car',
+                        'Price': 25})
+purchase_3 = pd.Series({'Shop': 'Books',
+                        'item_buy': 'book',
+                        'Price': 250})
+purchase_4 = pd.Series({'Shop': 'Cothes',
+                        'item_buy': 'Jeans',
+                        'Price': 25000})
+purchase_5 = pd.Series({'Shop': 'Books',
+                        'item_buy': 'Novel',
+                        'Price': 350})
+purchase_6 = pd.Series({'Shop': 'Cothes',
+                        'item_buy': 'Trousers',
+                        'Price': 1500})
+purchase_7 = pd.Series({'Shop': 'Colors',
+                        'item_buy': 'Paint',
+                        'Price': 4570})
+purchase_8 = pd.Series({'Shop': 'Stationary',
+                        'item_buy': 'Pens',
+                        'Price': 25})
+purchase_9 = pd.Series({'Shop': 'Cothes',
+                        'item_buy': 'Jacket',
+                        'Price': 5000})
+df = pd.DataFrame(
+    [purchase_1, purchase_2, purchase_3, purchase_4, purchase_5, purchase_6, purchase_7, purchase_8, purchase_9],
+    index=['Clothes_Shop', 'Toy_Shop', 'Book_Shop', 'Clothes_Shop', 'Book_Shop', 'Clothes_Shop', 'Color_Shop',
+           'Stationary_Shop', 'Clothes_Shop'])
 
 print(df)
+# drop function
+# it uses to drop the coloumns or th variables from the data frame
+print(df.drop('Book_Shop'))
+
 # a data frame has been created
 
+# Data frame indexing and loading
+price  = df['Price']
+print(price)
 
+price += 100000  # how to alter the data
+print(price)
+
+'''
+'''
+import pandas as pd
+import csv
+
+File = 'Customer.csv'
+df = pd.read_csv('Customer.csv')
+print(df)
+
+# boolean masking
+# or to apply the boolean or conditions to sort out or clean the data
+
+only_region = df.where(df('Region' = 'South'))
+print(only_region)
+'''
+# indexing the dataframes
+
+
+import pandas as pd
+purchase_1 = pd.Series({'Name': 'Chris',
+                        'Item Purchased': 'Dog Food',
+                        'Cost': 22.50})
+purchase_2 = pd.Series({'Name': 'Kevyn',
+                        'Item Purchased': 'Kitty Litter',
+                        'Cost': 2.50})
+purchase_3 = pd.Series({'Name': 'Vinod',
+                        'Item Purchased': 'Bird Seed',
+                        'Cost': 5.00})
+
+df = pd.DataFrame([purchase_1, purchase_2, purchase_3], index=['Store 1', 'Store 1', 'Store 2'])
+
+
+df = df.set_index([df.index, 'Name'])
+df.index.names = ['Location', 'Name']
+df = df.append(pd.Series(data={'Cost': 3.00, 'Item Purchased': 'Kitty Food'}, name=('Store 2', 'Kevyn')))
+print(df)
