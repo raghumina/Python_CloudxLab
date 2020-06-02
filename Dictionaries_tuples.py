@@ -131,12 +131,34 @@ print(len(t3))
 '''
 
 # tuples
-t = (1,3,5,2,54,34,2,34,5)
+t = (1, 3, 5, 2, 54, 34, 2, 34, 5)
 l = len(t)
-t = (1,3,5,2,54,34,2,34,5)
+t = (1, 3, 5, 2, 54, 34, 2, 34, 5)
 l = len(t)
-print(t[l-2])   # well the result will be 34
+print(t[l - 2])  # well the result will be 34
 t2 = t[2:5]
 print(t2)
 t3 = t[1:3] + t2[:]
 print(t3)
+
+print((0, 1, 2) < (0, 3))
+l = [(0, 23, 34), (2, 34, 23), (1, 34, 23)]
+print(l.sort())
+
+
+# Problem
+# Define a function with the name dict_tuple_func that takes a list of integers as an argument.
+# It should create a dictionary with the key as the integer and
+# the value as the number of times it is present in the list.
+# It should return a tuple in which the first element is the dictionary
+# (you created above step) and the second element is the sum of all unique integers in the list
+# Sample Input -
+#
+# dict_tuple_func([1, 2, 3, 1, 2, 3])
+# Sample Output -
+#
+# ({1: 2, 2: 2, 3: 2}, 6)
+
+
+#def dict_tuple_func(list):
+
