@@ -108,7 +108,7 @@ try:
 except:
     istr -1  # this will show a error
 
-'''
+
 # Program 10
 # rewrite your pay computation to give the employee 1.5 times the the hourly rate
 # for hours worked above 40
@@ -130,3 +130,24 @@ except:
     print("Please enter the valid data\nEnter the Float Values")
     hours = float(input("Please enter the hours here\n"))
     rate = float(input("Please enter the rate here\n"))
+
+'''
+# program 11
+# lets write another program similar to program 10
+# the basic blueprint is that if a buyer buys products above a fixed amount they will get
+# a specfic discount total price
+
+try:
+    print("Please enter the total amount here\n ")
+    amount = float(input("Please enter the amount here: "))
+    total = 0
+    if amount > 10000:
+        total = amount - 10000
+        discount = 10000 * 30 / 100
+        after_amount = amount - discount
+        print(after_amount)
+    else:
+        print(amount)
+except:
+    print("Please enter the valid values, check the values again ")
+    amount = float(input("Please enter the amount here: "))
