@@ -64,12 +64,12 @@ if gross_pay <= 1000:
     print("in range ")
 
 print("Got it")
-'''
+
 # program 6
 # another simple sample program
 # we will use arithmatic operators in it
 
-number = 10
+number = int(input("Please enter the number to check the conditions: "))
 if number > 5:
     print("number is greater than 5 ")
 if number < 11:
@@ -78,3 +78,14 @@ if number == 10:
     print("number is equal to 10")
 if number != 8:
     print("number is not wual to 8")
+'''
+
+# program 7
+# using for condition
+for i in range(10):
+    print(i)
+    if i > 2:
+        print("Bigger")
+    else:
+        print("smaller")
+print("program to check which numbers are bigger or which are smaller")
