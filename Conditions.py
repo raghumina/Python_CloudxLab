@@ -116,8 +116,11 @@ print("Please enter rate and hours here ")
 try:
     hours = float(input("Please enter the hours here\n"))
     rate = float(input("Please enter the rate here\n"))
+    extra_hour = 0
     if hours > 40:
-        gross_pay = hours * rate + 5 * 15
+        extra_hour = hours - 40
+        hours = 40
+        gross_pay = hours * rate + 1.5 * rate * extra_hour
         print(gross_pay)
     else:
         gross_pay = hours * rate
@@ -127,4 +130,3 @@ except:
     print("Please enter the valid data\nEnter the Float Values")
     hours = float(input("Please enter the hours here\n"))
     rate = float(input("Please enter the rate here\n"))
-
