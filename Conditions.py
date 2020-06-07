@@ -7,7 +7,7 @@ rate_per_hour = float(input("Please enter the rate here\n"))
 gross_pay = hours * rate_per_hour
 print("The gross pay is:",gross_pay)
 
-'''
+
 # number 1
 # another normal revision or practise program
 # lets find a largest number among the three numbers given by the user
@@ -37,3 +37,15 @@ if num1 > num2 and num1 > num3:
             print("All are equal ")
             # not giving suitable answer in unexpected condition
             # what to do ????
+'''
+
+# another same type of question
+number = int(input("Please enter a number "))
+if number > 10:
+    print("greater")
+if number < 10:
+    print("smaller")
+if number == 10:
+    print("equal")
+
+
