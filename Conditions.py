@@ -89,7 +89,7 @@ for i in range(10):
     else:
         print("smaller")
 print("program to check which numbers are bigger or which are smaller")
-'''
+
 # TRY AND EXCEPT
 
 # program 8
@@ -106,5 +106,25 @@ astr = "Hello"
 try:
     istr = int(astr)
 except:
-    istr -1  # this will show a error 
+    istr -1  # this will show a error
+
+'''
+# Program 10
+# rewrite your pay computation to give the employee 1.5 times the the hourly rate
+# for hours worked above 40
+print("Please enter rate and hours here ")
+try:
+    hours = float(input("Please enter the hours here\n"))
+    rate = float(input("Please enter the rate here\n"))
+    if hours > 40:
+        gross_pay = hours * rate + 5 * 15
+        print(gross_pay)
+    else:
+        gross_pay = hours * rate
+        print(gross_pay)
+
+except:
+    print("Please enter the valid data\nEnter the Float Values")
+    hours = float(input("Please enter the hours here\n"))
+    rate = float(input("Please enter the rate here\n"))
 
