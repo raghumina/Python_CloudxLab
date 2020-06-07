@@ -2,13 +2,14 @@
 # write a program to prompt the user for hours and rate per hour to compute gross pay
 '''
 # lets start
+# program 1
 hours = float(input("Please enter the hours here\n"))
 rate_per_hour = float(input("Please enter the rate here\n"))
 gross_pay = hours * rate_per_hour
 print("The gross pay is:",gross_pay)
 
 
-# number 1
+# program 2
 # another normal revision or practise program
 # lets find a largest number among the three numbers given by the user
 number1 = int(input("Please enter number1 here\n"))
@@ -23,7 +24,7 @@ else:
 print("All are equal or condition not matched ")
 
 # lets try to solve this same question with multiple if condiotion or any other possible way
-# number 2
+# progrm 3
 num1 = int(input("Please enter number1 here\n"))
 num2 = int(input("Please enter number2 here\n"))
 num3 = int(input("Please enter number3 here\n"))
@@ -37,8 +38,8 @@ if num1 > num2 and num1 > num3:
             print("All are equal ")
             # not giving suitable answer in unexpected condition
             # what to do ????
-'''
 
+# program 4
 # another same type of question
 number = int(input("Please enter a number "))
 if number > 10:
@@ -47,5 +48,20 @@ if number < 10:
     print("smaller")
 if number == 10:
     print("equal")
+'''
+# program 5
+# lets make the program 1 more efficient or interactive
+# the program 1 is about the rent hour and the gross pay
 
+hours = float(input("Please enter the hours here\n"))
+rent = float(input("Please enter the rate here\n"))
+gross_pay = hours * rent
+if gross_pay > 1000:
+    print(gross_pay)
+    print("Out of range ")
+if gross_pay <= 1000:
+    print(gross_pay)
+    print("in range ")
+
+print("Got it")
 
