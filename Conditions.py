@@ -78,7 +78,7 @@ if number == 10:
     print("number is equal to 10")
 if number != 8:
     print("number is not wual to 8")
-'''
+
 
 # program 7
 # using for condition
@@ -89,3 +89,15 @@ for i in range(10):
     else:
         print("smaller")
 print("program to check which numbers are bigger or which are smaller")
+'''
+# TRY AND EXCEPT
+
+# program 8
+# lets use try and except
+
+try:
+    rate = int(input("Please enter the number here "))
+except:
+    print("Please enter the valid variable type ")
+    rate = int(input("Again enter number here"))
+
