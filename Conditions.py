@@ -147,7 +147,11 @@ try:
         after_amount = amount - discount
         print(after_amount)
     else:
-        print(amount)
+        ramaning_amount = 10000 - amount
+        avail_amounnt = str(remaning_amount)
+        print("Please buy products worth" + avail_amounnt + "To avail discount")
+
+
 except:
     print("Please enter the valid values, check the values again ")
     amount = float(input("Please enter the amount here: "))
