@@ -101,3 +101,10 @@ except:
     print("Please enter the valid variable type ")
     rate = int(input("Again enter number here"))
 
+# program 9
+astr = "Hello"
+try:
+    istr = int(astr)
+except:
+    istr -1  # this will show a error 
+
