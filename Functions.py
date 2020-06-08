@@ -117,7 +117,6 @@ def pow(num1, num2):
 
 print(calculator(2, 2))
 print(add(2, 2), div(3, 5), pow(2, 2))   # this way we can use multi functions at a time
-'''
 
 
 # Program 8
@@ -143,3 +142,26 @@ def country(lang):
 
 print("Please type your language here ")
 print(country("german"))
+'''
+
+# lets do the program 8 with return type
+# program 9
+
+def country(lang):
+    if lang == "eng":
+        return ("Hello")
+
+    if lang == "hindi":
+        return ("Namste")
+
+    if lang == "french":
+        return ("Bonjour")
+
+    if lang == "german":
+        return ("Guten tag ")
+
+
+    else:
+        return "Please type your country"
+
+print(country("french"))
