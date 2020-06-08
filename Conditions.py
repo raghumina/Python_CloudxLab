@@ -131,7 +131,7 @@ except:
     hours = float(input("Please enter the hours here\n"))
     rate = float(input("Please enter the rate here\n"))
 
-'''
+
 # program 11
 # lets write another program similar to program 10
 # the basic blueprint is that if a buyer buys products above a fixed amount they will get
@@ -148,10 +148,37 @@ try:
         print(after_amount)
     else:
         ramaning_amount = 10000 - amount
-        avail_amounnt = str(remaning_amount)
+        avail_amounnt = str(remaning_amount)  # error here
         print("Please buy products worth" + avail_amounnt + "To avail discount")
 
 
 except:
     print("Please enter the valid values, check the values again ")
     amount = float(input("Please enter the amount here: "))
+
+
+# Praogram 12
+x = 0
+if x < 2:
+    print("Small")
+elif x < 10:
+    print("Medium")
+else:
+    print("Lage")
+print("ALL DONE")
+
+# Program 13
+astr = "Hello"
+istr = int(astr)
+print("First", istr)
+astr = "123"
+istr = int(astr)
+print("Second", istr)
+'''
+# Program 14
+astr = "Hello"
+istr = 0
+try:
+    istr = int(astr)
+except:
+    istr = -1
