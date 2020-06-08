@@ -32,7 +32,7 @@ def void_function(num1, num2):
 
 void_function(4.6, 7.3)
 
-'''
+
 # program 3
 
 def add(x, y, z):
@@ -65,7 +65,11 @@ def add_num(x, y, z='None'):
 
 print(add_num(1, 2))
 print(add_num(1, 2, 3))
-
+'''
 # Revising the Function part
 # program 6
+def hello():
+    print("Hello")
+    print("How are you ")
 
+print("Raghu",hello())
