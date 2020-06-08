@@ -81,13 +81,13 @@ except:
     print("Please put integer number")
 
 print(add(2, 3))
-'''
+
 
 
 # program 7
 # Lets try a nest function
 
-def calculator(num1, num2):
+def calculator(num1, num2):   # functions with arguments
     print("Please write the another function ")
 
 
@@ -117,6 +117,29 @@ def pow(num1, num2):
 
 print(calculator(2, 2))
 print(add(2, 2), div(3, 5), pow(2, 2))   # this way we can use multi functions at a time
+'''
 
 
 # Program 8
+# lets try an another simple program
+# using both functons and conditions
+def country(lang):
+    if lang == "eng":
+        print("Hello")
+        print("England")
+    if lang == "hindi":
+        print("Namste")
+        print("India")
+    if lang == "french":
+        print("Bonjour")
+        print("France")
+    if lang == "german":
+        print("Guten tag ")
+        print("Germany")
+
+    else:
+        print("Please type your country ")
+
+
+print("Please type your language here ")
+print(country("german"))
