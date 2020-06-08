@@ -83,26 +83,40 @@ except:
 print(add(2, 3))
 '''
 
+
 # program 7
 # Lets try a nest function
 
 def calculator(num1, num2):
     print("Please write the another function ")
-    def add(num1, num2):
-        print(num1 + num2)
 
-        def mult(num1, num2):
-            print(num1 * num2)
 
-            def sub(num1, num2):
-                print(num1 - num2)
+def add(num1, num2):
+    print(num1 + num2)
 
-                def div(num1, num2):
-                    print(num1 / num2)
 
-                    def mod(num1, num2):
-                        print(num1 % num2)
+def mult(num1, num2):
+    print(num1 * num2)
 
-                        def pow(num1, num2):
-                            print(num1 ** num2)
-print(calculator(2,2))
+
+def sub(num1, num2):
+    print(num1 - num2)
+
+
+def div(num1, num2):
+    print(num1 / num2)
+
+
+def mod(num1, num2):
+    print(num1 % num2)
+
+
+def pow(num1, num2):
+    print(num1 ** num2)
+
+
+print(calculator(2, 2))
+print(add(2, 2), div(3, 5), pow(2, 2))   # this way we can use multi functions at a time
+
+
+# Program 8
