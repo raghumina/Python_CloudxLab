@@ -58,7 +58,7 @@ while n > 0:
     n = n - 1
 print("Ohk")
 print(n)
-'''
+
 # Program 6
 # break statements
 
@@ -69,14 +69,24 @@ while True:
     print(line)
 
 print("Correct input")
-
+'''
 # program 8
 # lets use the conditional statement with some simple programs
 # for example we will use the hours and rate program for rent
 
 try:
     hours = float(input("Please enter hours here: "))
-    rent = float(input("Please enter the rent here: "))
+    rate = float(input("Please enter the rent here: "))
     extra_hours = 0
-    if hours > 40:
-        
+    while True:
+        if hours > 40:
+            extra_hours = hours - 40
+            hours = 40
+            pay = hours * rate + 1.5 * extra_hours
+            print(pay)
+            break
+        print("Not applicable for that rate ")
+except:
+    print("Please enter the correct values ")
+    hours = float(input("Please enter hours here: "))
+    rate = float(input("Please enter the rent here: "))
