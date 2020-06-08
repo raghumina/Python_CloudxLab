@@ -165,3 +165,26 @@ def country(lang):
         return "Please type your country"
 
 print(country("french"))
+# with return type we can assign the function value to a variable
+# for example
+x = country("eng")
+print(x)   # this is not possible with print type
+
+
+# program 10
+# rewrite pay computation ( in conditions) with time and a half for over time a create a function called
+# computepay which takes two parameters hours and rate
+
+def compute_pay(hours,rate):
+    extra = 0
+    if hours > 40:
+        extra = hours - 40
+        hours = 40
+        pay = hours * rate + 1.5 * rate * extra
+        return  pay
+    else:
+        return hours * rate
+
+hours = 45
+rate = 10
+print(compute_pay(hours,rate))
