@@ -1,37 +1,39 @@
+
+'''
 # for and while loop
 # the loop conditions
 
 # A sample program
 # program 1
 # infinite loop
-# i = 0
-# while i < 12:     # this will print an infinite loop
-#    print("hello")
-#    print("raghu")
-# print("ohoho")
+i = 0
+while i < 12:     # this will print an infinite loop
+    print("hello")
+    print("raghu")
+print("ohoho")
 
 # program 2
 # another sample  program
 # with break
-# while True:
-#    line = input(" >")
-#    if line == 'done':
-#        break  # break the loop when condition is met
-#    print(line)
-# print("Done ")
+while True:
+    line = input(" >")
+    if line == 'done':
+        break  # break the loop when condition is met
+    print(line)
+ print("Done ")
 
 # program 3
 # sample program
 # with continue
 
-#while True:
-#    line = input(" >")
-#    if line == '#':  # this will continue the loop
-#        continue  # until the next condition is met
-#   if line == 'done':
-#       break
-#       print(line)
-'''
+while True:
+    line = input(" >")
+    if line == '#':  # this will continue the loop
+        continue  # until the next condition is met
+   if line == 'done':
+       break
+       print(line)
+
 # program 4
 #print('completed')
 import turtle
@@ -79,14 +81,23 @@ try:
     rate = float(input("Please enter the rent here: "))
     extra_hours = 0
     while True:
-        if hours > 40:
+        if hours >= 40:
             extra_hours = hours - 40
             hours = 40
             pay = hours * rate + 1.5 * extra_hours
             print(pay)
             break
-        print("Not applicable for that rate ")
+        print("Not applicable for that rate ")  # it is running a infinite loop if the hours are less then 45 ?????
 except:
     print("Please enter the correct values ")
     hours = float(input("Please enter hours here: "))
     rate = float(input("Please enter the rent here: "))
+
+
+# nested while loop
+# while in a while
+# lets try for a random problem
+# for example
+
+
+
