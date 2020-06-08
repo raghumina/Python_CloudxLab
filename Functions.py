@@ -65,11 +65,44 @@ def add_num(x, y, z='None'):
 
 print(add_num(1, 2))
 print(add_num(1, 2, 3))
-'''
+
 # Revising the Function part
 # program 6
-def hello():
+def hello(Name):
     print("Hello")
     print("How are you ")
 
-print("Raghu",hello())
+print(hello(), "Tom")
+
+try:
+    def add(x, y):
+        print(x + y)
+except:
+    print("Please put integer number")
+
+print(add(2, 3))
+'''
+
+# program 7
+# Lets try a nest function
+
+def calculator(num1, num2):
+    print("Please write the another function ")
+    def add(num1, num2):
+        print(num1 + num2)
+
+        def mult(num1, num2):
+            print(num1 * num2)
+
+            def sub(num1, num2):
+                print(num1 - num2)
+
+                def div(num1, num2):
+                    print(num1 / num2)
+
+                    def mod(num1, num2):
+                        print(num1 % num2)
+
+                        def pow(num1, num2):
+                            print(num1 ** num2)
+print(calculator(2,2))
