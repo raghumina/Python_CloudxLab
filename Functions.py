@@ -1,6 +1,6 @@
 # Functions
 # Catching Exceptions
-
+# Program 1
 # Define a function with name except_func
 # which takes one argument with name num and returns its multiplication with itself.
 # If the argument passed during the function call is not valid for multiplication,
@@ -18,6 +18,7 @@ def except_func(num):
 
 except_func(2)
 
+# Program 2
 import math
 
 
@@ -32,7 +33,7 @@ def void_function(num1, num2):
 void_function(4.6, 7.3)
 
 '''
-
+# program 3
 
 def add(x, y, z):
     a = x + y + z
@@ -41,7 +42,7 @@ def add(x, y, z):
 
 print(add(1, 2, 3))
 
-
+# program 4
 def do_math(a, b, kind='add'):
     if (kind == 'add'):  # if this condition is true then the output will be a + b other wise else condition will run
         return a + b
@@ -51,7 +52,7 @@ def do_math(a, b, kind='add'):
 
 do_math(1, 2)
 
-
+# program 5
 # LABELED PARAMETERS IN FUNCTIONS
 # For example
 
@@ -64,3 +65,7 @@ def add_num(x, y, z='None'):
 
 print(add_num(1, 2))
 print(add_num(1, 2, 3))
+
+# Revising the Function part
+# program 6
+
