@@ -48,7 +48,7 @@ while True:
             turtle.forward(100)
             turtle.right(90)
 print("complete")
-'''
+
 
 # revision
 # program 5
@@ -58,4 +58,16 @@ while n > 0:
     n = n - 1
 print("Ohk")
 print(n)
+'''
+# Program 6
+# break statements
 
+while True:
+    line = input(">")
+    if line == "done":   # will run the loop util condition got true
+        break
+    print(line)
+
+print("Correct input")
+
+# program 8 
