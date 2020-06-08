@@ -70,4 +70,13 @@ while True:
 
 print("Correct input")
 
-# program 8 
+# program 8
+# lets use the conditional statement with some simple programs
+# for example we will use the hours and rate program for rent
+
+try:
+    hours = float(input("Please enter hours here: "))
+    rent = float(input("Please enter the rent here: "))
+    extra_hours = 0
+    if hours > 40:
+        
