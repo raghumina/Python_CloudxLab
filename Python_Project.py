@@ -21,3 +21,10 @@ def num_of_lines():
         return count
 
 # Project part 2
+# Write a function count_number_of_lines which returns the count of the number of lines starting with Subject:
+# in the file /cxldata/datasets/project/mbox-short.txt
+# PS - If your logic is correct then your function should return 27.
+# You can use "Hint" and "See Answer" if you are stuck.
+def count_number_of_lines():
+    fhand = open('/cxldata/datasets/project/mbox-short.txt')
+    inp = fhand.read()
