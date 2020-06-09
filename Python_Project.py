@@ -19,3 +19,5 @@ def num_of_lines():
             if c == '\n':
                 count += 1
         return count
+
+# Project part 2
