@@ -59,3 +59,17 @@ count_number_of_lines()
 #
 # At the end of the program return the contents of your dictionary (order does not matter)
 
+def find_email_sent_days():
+    daysdict = {}
+    dayslist = []
+
+    with open("/cxldata/datasets/project/mbox-short.txt") as f:
+      for line in f:
+        dayslist = line.split()
+        if len(dayslist) > 3 and line.startswith('From'):
+            day = dayslist[2]
+            if day not in daysdict:
+                daysdict[day] = 1
+            else:
+                daysdict[day] += 1
+    return daysdict
