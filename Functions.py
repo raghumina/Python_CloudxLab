@@ -142,7 +142,7 @@ def country(lang):
 
 print("Please type your language here ")
 print(country("german"))
-'''
+
 
 # lets do the program 8 with return type
 # program 9
@@ -169,7 +169,7 @@ print(country("french"))
 # for example
 x = country("eng")
 print(x)   # this is not possible with print type
-
+'''
 
 # program 10
 # rewrite pay computation ( in conditions) with time and a half for over time a create a function called
@@ -188,3 +188,20 @@ def compute_pay(hours,rate):
 hours = 45
 rate = 10
 print(compute_pay(hours,rate))
+
+'''
+# Program 11
+def addtwo(a, b):
+    added = a + b
+    return a
+
+x = addtwo(2, 7)
+print(x)
+
+def stuff():
+    print('Hello')
+    return
+    print('World')
+
+stuff()
+'''
