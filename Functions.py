@@ -174,9 +174,11 @@ print(x)   # this is not possible with print type
 # program 10
 # rewrite pay computation ( in conditions) with time and a half for over time a create a function called
 # computepay which takes two parameters hours and rate
-
+hours = float(input("Enter hours here: "))
+rate = float(input("Enter rate here: "))
+extra = 0
 def compute_pay(hours,rate):
-    extra = 0
+
     if hours > 40:
         extra = hours - 40
         hours = 40
@@ -185,9 +187,8 @@ def compute_pay(hours,rate):
     else:
         return hours * rate
 
-hours = 45
-rate = 10
-print(compute_pay(hours,rate))
+
+print("Pay",compute_pay(hours,rate))
 
 '''
 # Program 11
