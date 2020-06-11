@@ -31,7 +31,7 @@ for letter in name:
         count = count + 1
         print(count)
 
-'''
+
 n = "tommy"
 print(n[0:])  # the colon will counts all the string based on the location or number we have given to it
 # more examples
@@ -112,3 +112,10 @@ print(line.endswith('y')) #this will give weather the end of line is True or Fal
 line1 = "waht are you doing @ bus station "
 position = line1.find('@')
 print(position)  # the @ is present at the 19th position
+'''
+# Revision
+# Position of the specific character in the strings
+fruit = "banana"
+print(fruit[-1])
+
+fruit = "banana "
