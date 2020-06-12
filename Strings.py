@@ -118,4 +118,14 @@ print(position)  # the @ is present at the 19th position
 fruit = "banana"
 print(fruit[-1])
 
-fruit = "banana "
+
+# another program
+fruit = "Mango"
+index = 0
+while index < len(fruit):
+    word = fruit[index]
+    print(index,word)
+    index = index - 1
+
+
+# other similar programs
