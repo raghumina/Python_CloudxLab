@@ -124,8 +124,13 @@ fruit = "Mango"
 index = 0
 while index < len(fruit):
     word = fruit[index]
-    print(index,word)
-    index = index - 1
+    print(index,word)  # now i will give a condition so that the index will run till the condition not become infinite
+    index = index + 1
 
 
 # other similar programs
+index = 0
+name = "Fernando"
+while index < len(name):
+    letter = name[index]
+    print(name[:3])  # a infinite loop because of no condition :) :) 
