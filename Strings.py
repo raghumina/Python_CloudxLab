@@ -112,7 +112,7 @@ print(line.endswith('y')) #this will give weather the end of line is True or Fal
 line1 = "waht are you doing @ bus station "
 position = line1.find('@')
 print(position)  # the @ is present at the 19th position
-'''
+
 # Revision
 # Position of the specific character in the strings
 fruit = "banana"
@@ -133,4 +133,6 @@ index = 0
 name = "Fernando"
 while index < len(name):
     letter = name[index]
-    print(name[:3])  # a infinite loop because of no condition :) :) 
+    print(name[:3])  # a infinite loop because of no condition :) :)
+'''
+# Another example
