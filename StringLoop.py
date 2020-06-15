@@ -32,7 +32,7 @@ for numbers in [2, 4, 5, 7, 8, 6, 5, 4, 3, 223]:
 print("The count is :", count)
 print("the sum is :", sum)
 print("the average is :", sum / count)
-'''
+
 
 x = [1, 2, 45, 6, 7, 54, ]
 print(max(x))  # to find the maximum value in a list
@@ -53,5 +53,8 @@ for numbers in [1, 2, 3, 4, 5, 6, 7, 8, 9, 7, 6, 5, 4, 4, 3, 2, 2]:
         print("the larger numbers are")
 
 print("get the answer")
-
-# same method we can apply for the smaller numbers
+'''
+# String with loop 
+name = "Neymar"
+for letter in name:
+    print(letter)
