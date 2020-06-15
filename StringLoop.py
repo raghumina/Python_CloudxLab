@@ -53,8 +53,27 @@ for numbers in [1, 2, 3, 4, 5, 6, 7, 8, 9, 7, 6, 5, 4, 4, 3, 2, 2]:
         print("the larger numbers are")
 
 print("get the answer")
-'''
-# String with loop 
+
+# String with loop
 name = "Neymar"
 for letter in name:
     print(letter)
+
+name_1 = "Neymar"
+index = 0
+while index < len(name_1):
+    letter = name_1[index]
+    print(index,letter)
+    index = index + 1
+'''
+
+word = "Hello"
+count = 0
+for letter in word:
+    if letter == "p":
+        count = count + 1
+        print(count)
+    else:
+        print("No word found ")
+
+
