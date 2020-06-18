@@ -126,3 +126,32 @@ def count_message_from_domain():
                 else:
                     domaindict[domain] += 1
     return domaindict
+
+
+# Write a function count_message_from_email which reads the file /cxldata/datasets/project/mbox-short.txt.
+#
+# This function builds a histogram using a dictionary to count how many
+# messages have come from each email address and returns the dictionary.
+#
+# Output:
+#
+# If your logic is correct then your function should return a dictionary like the following:
+#
+# {'stephen.marquard@uct.ac.za': 2, 'louis@media.berkeley.edu': 3,
+# 'zqian@umich.edu': 4, 'rjlowe@iupui.edu': 2, 'cwen@iupui.edu': 5,
+# 'gsilver@umich.edu': 3, 'wagnermr@iupui.edu': 1, 'antranig@caret.cam.ac.uk': 1,
+# 'gopal.ramasammycook@gmail.com': 1, 'david.horwitz@uct.ac.za': 4, 'ray@media.berkeley.edu': 1}
+
+def count_message_from_email():
+    lineslist=[]
+    emaildict={}
+    with open("/cxldata/datasets/project/mbox-short.txt") as f:
+      for line in f:
+        lineslist = line.split()
+        if line.startswith('From:'):
+          email=lineslist[1]
+          if email not in emaildict:
+            emaildict[email] = 1
+          else:
+            emaildict[email] += 1
+    return emaildict
