@@ -95,3 +95,34 @@ def average_spam_confidence():
                 spam_confidence_sum = spam_confidence_sum + float(value)
                 count = count + 1
     return spam_confidence_sum/count
+
+
+
+# Write a function count_message_from_domain which reads the file /cxldata/datasets/project/mbox-short.txt.
+#
+# This function builds a histogram using a dictionary to count how many messages
+# have come from each domain(Instead of from email address), and returns the dictionary.
+#
+# If your logic is correct then your function should return below dictionary
+#
+# {'uct.ac.za': 6,
+#  'media.berkeley.edu': 4,
+#  'umich.edu': 7,
+#  'iupui.edu': 8,
+#  'caret.cam.ac.uk': 1,
+#  'gmail.com': 1}
+
+def count_message_from_domain():
+    lineslist=[]
+    domaindict={}
+    with open("/cxldata/datasets/project/mbox-short.txt") as f:
+        for line in f:
+            lineslist = line.split()
+            if line.startswith('From:'):
+                email=lineslist[1]
+                domain = email.split('@')[1]
+                if domain not in domaindict:
+                    domaindict[domain] = 1
+                else:
+                    domaindict[domain] += 1
+    return domaindict
