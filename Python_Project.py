@@ -73,3 +73,25 @@ def find_email_sent_days():
             else:
                 daysdict[day] += 1
     return daysdict
+
+
+# Define a function average_spam_confidence which calculates the average spam confidence and returns it
+# Open the file mbox-short.txt which is located at /cxldata/datasets/project/mbox-short.txt
+# Loop through the file handle
+# Select only those lines starts with X-DSPAM-Confidence:
+# Split the lines at : and take the float value which is spam confidence
+# Find the average of this spam confidence in the entire file and return it.
+# PS - If your logic is correct then the correct spam confidence score should be 0.7507185185185187.
+#
+
+def average_spam_confidence():
+    with open('/cxldata/datasets/project/mbox-short.txt') as f:
+        count = 0
+        spam_confidence_sum = 0
+        for line in f:
+            line = line.rstrip() # Remove new line characters from right
+            if line.startswith('X-DSPAM-Confidence:'):
+                var, value = line.split(':')
+                spam_confidence_sum = spam_confidence_sum + float(value)
+                count = count + 1
+    return spam_confidence_sum/count
