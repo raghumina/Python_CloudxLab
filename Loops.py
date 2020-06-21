@@ -92,7 +92,7 @@ except:
     print("Please enter the correct values ")
     hours = float(input("Please enter hours here: "))
     rate = float(input("Please enter the rent here: "))
-'''
+
 
 # nested while loop
 # while in a while
@@ -120,3 +120,7 @@ while n > 0 :
     print('Lather')
     print('Rinse')
 print('Dry off!')
+'''
+fruit = "banana"
+for words in fruit:
+    print(words)
