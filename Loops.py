@@ -124,3 +124,14 @@ print('Dry off!')
 fruit = "banana"
 for words in fruit:
     print(words)
+
+
+#
+count = 0
+name = "Tommy"
+for word in name:
+    count = count + 1
+    print(word,count)
+# :) :) :)
+
+name_1 = "Jeery"
