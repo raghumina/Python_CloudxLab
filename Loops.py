@@ -170,9 +170,9 @@ text_float = float(text)
 print(text.find([]))
 '''
 
-text = "X-DSPAM-Confidence:    0.8475"
+text = "X-DSPAM-Confidence:    0.8475;"
 
-pos = text.find("5")
-suppo = text.find("",pos)
-host = text[pos+1:suppo]
+pos = text.find("")
+suppo = text.find(";",pos)
+host = text[pos+23 : suppo]
 print(host)
