@@ -12,6 +12,30 @@ while i < 12:     # this will print an infinite loop
     print("raghu")
 print("ohoho")
 
+'''
+
+
+
+
+
+print("Hey how are you everyone")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # program 2
 # another sample  program
 # with break
@@ -20,9 +44,20 @@ while True:
     if line == 'done':
         break  # break the loop when condition is met
     print(line)
- print("Done ")
+print("Done ")
 
+
+
+
+
+
+
+
+
+'''
 # program 3
+
+
 # sample program
 # with continue
 
@@ -168,7 +203,7 @@ print(data.find())
 text = "X-DSPAM-Confidence:    0.8475";
 text_float = float(text)
 print(text.find([]))
-'''
+
 
 text = "X-DSPAM-Confidence:    0.8475;"
 
@@ -176,3 +211,4 @@ pos = text.find("")
 suppo = text.find(";",pos)
 host = text[pos+23 : suppo]
 print(host)
+'''
