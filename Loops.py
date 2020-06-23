@@ -151,7 +151,7 @@ print(bob)
 x = '40'
 y = int(x) + 2
 print(y)
-'''
+
 
 #x = 'From marquard@uct.ac.za'
 #print(x[8])
@@ -168,3 +168,11 @@ print(data.find())
 text = "X-DSPAM-Confidence:    0.8475";
 text_float = float(text)
 print(text.find([]))
+'''
+
+text = "X-DSPAM-Confidence:    0.8475"
+
+pos = text.find("5")
+suppo = text.find("",pos)
+host = text[pos+1:suppo]
+print(host)
