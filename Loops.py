@@ -133,11 +133,34 @@ for word in name:
     count = count + 1
     print(word,count)
 # :) :) :)
-'''
+
+# Practise questions
+
 name_1 = "Jeeeery"
 count = 0
 for words in name_1:
     if words == "e":
         count = count + 1
         print(count)
- 
+
+str1 = "Hello"
+str2 = 'there'
+bob = str1 + str2
+print(bob)
+
+x = '40'
+y = int(x) + 2
+print(y)
+'''
+
+#x = 'From marquard@uct.ac.za'
+#print(x[8])
+
+#x = 'From marquard@uct.ac.za'
+#print(x[14:3])
+
+print(len('banana')*7)
+
+data = 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'
+pos = data.find('.')
+print(data.find(0,8))
