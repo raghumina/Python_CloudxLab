@@ -120,7 +120,7 @@ while n > 0 :
     print('Lather')
     print('Rinse')
 print('Dry off!')
-'''
+
 fruit = "banana"
 for words in fruit:
     print(words)
@@ -133,5 +133,11 @@ for word in name:
     count = count + 1
     print(word,count)
 # :) :) :)
-
-name_1 = "Jeery"
+'''
+name_1 = "Jeeeery"
+count = 0
+for words in name_1:
+    if words == "e":
+        count = count + 1
+        print(count)
+ 
