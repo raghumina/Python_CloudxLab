@@ -28,7 +28,6 @@ for row in rows[:5]:
         print("%10s" % col)
         print("\n")
 
-'''
 # files related problem
 # Define a function with the name as file_read_func that takes the path of the file as an argument
 # (assume it as str format).
@@ -58,5 +57,10 @@ def file_read_func(path):
 
 print(file_read_func('Customer.csv'))
 
+'''
+import csv
+xfile = open("Customer.csv",)
+for Customer in xfile:
+    print(Customer)
 
 
