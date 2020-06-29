@@ -59,8 +59,10 @@ print(file_read_func('Customer.csv'))
 
 '''
 import csv
-xfile = open("Customer.csv",)
+count = 0
+xfile = open("Customer.csv")
 for Customer in xfile:
-    print(Customer)
+    count = count + 1
+    print(count)
 
 
