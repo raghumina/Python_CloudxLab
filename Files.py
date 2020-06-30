@@ -92,7 +92,7 @@ for i in f1:
     f1.write(i)
     print(f1.write('i'))
     
-'''
+
 
 # print all the lines in the file
 count = 0
@@ -100,4 +100,26 @@ sequence = open('Sequence1.txt')
 for line in sequence:
     count = count + 1
 
-    print(count, line)
+    print(count, line )
+    
+ '''
+count = 0
+file = open('Sequence1.txt')
+inp = file.read()
+print(len(inp))
+print(inp[:6885])
+
+
+# PROBLEM
+#
+# Write a program that prompts for a file name,
+# then opens that file and reads through the file,
+# and print the contents of the file in upper case.
+# Use the file words.txt to produce the output below.
+
+file = input("words.txt")
+fh = open("words.txt","r")
+for i in fh:
+    ly = i.rstrip()
+    print(ly.upper())
+    
