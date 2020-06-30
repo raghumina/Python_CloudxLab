@@ -102,7 +102,7 @@ for line in sequence:
 
     print(count, line )
     
- '''
+ 
 count = 0
 file = open('Sequence1.txt')
 inp = file.read()
@@ -122,7 +122,7 @@ fh = open("words.txt","r")
 for i in fh:
     ly = i.rstrip()
     print(ly.upper())
-
+'''
 # Problem 2
 
 # Write a program that prompts for a file name,
@@ -132,3 +132,16 @@ for i in fh:
 # from each of the lines and compute the average of those values and produce an output
 # as shown below. Do not use the sum() function or a variable named sum in your solution.
 
+# Use the file name mbox-short.txt as the file name
+
+fname = input("mbox-short.txt")
+fh = open(fname)
+count = 0
+for line in fh:
+
+    if not line.startswith("X-DSPAM-Confidence:"):
+        count = count + 1
+
+        continue
+
+    print(line)
