@@ -66,6 +66,13 @@ for Customer in xfile:
     print(count)
 
 '''
+# how to read a file in python
+count = 0
+f = open("Customer.csv",'r')
+#print(f.read())
+#for Customer in f:
+#    count = count+1
+#    print(count,f)
+# to print or read the first line
+print(f.readline())
 
-f = open("Sequence.txt",'r')
-print(f.read())
