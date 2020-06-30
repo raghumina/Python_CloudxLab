@@ -65,7 +65,7 @@ for Customer in xfile:
     count = count + 1
     print(count)
 
-'''
+
 # how to read a file in python
 count = 0
 f = open("Customer.csv",'r')
@@ -75,4 +75,8 @@ f = open("Customer.csv",'r')
 #    print(count,f)
 # to print or read the first line
 print(f.readline())
+'''
+# how to write in a file
 
+f1 = open('Sequence.txt','w')
+f1.write("hello\n This is my sequence file")
