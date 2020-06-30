@@ -83,7 +83,7 @@ f1.write("hello\n This is my sequence file")
 
 f1 = open('Sequence1.txt','r')
 print(f1.read())
-'''
+
 # opening a picture
 f1 = open('Sketchpad.png','rb')  # using b for binary
 print(f1.read())
@@ -91,3 +91,13 @@ print(f1.read())
 for i in f1:
     f1.write(i)
     print(f1.write('i'))
+    
+'''
+
+# print all the lines in the file
+count = 0
+sequence = open('Sequence1.txt')
+for line in sequence:
+    count = count + 1
+
+    print(count, line)
