@@ -75,8 +75,19 @@ f = open("Customer.csv",'r')
 #    print(count,f)
 # to print or read the first line
 print(f.readline())
-'''
+
 # how to write in a file
 
 f1 = open('Sequence.txt','w')
 f1.write("hello\n This is my sequence file")
+
+f1 = open('Sequence1.txt','r')
+print(f1.read())
+'''
+# opening a picture
+f1 = open('Sketchpad.png','rb')  # using b for binary
+print(f1.read())
+
+for i in f1:
+    f1.write(i)
+    print(f1.write('i'))
