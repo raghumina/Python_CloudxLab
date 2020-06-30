@@ -57,7 +57,7 @@ def file_read_func(path):
 
 print(file_read_func('Customer.csv'))
 
-'''
+
 import csv
 count = 0
 xfile = open("Customer.csv")
@@ -65,4 +65,7 @@ for Customer in xfile:
     count = count + 1
     print(count)
 
+'''
 
+f = open("Sequence.txt",'r')
+print(f.read())
