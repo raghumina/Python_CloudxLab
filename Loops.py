@@ -20,22 +20,6 @@ print("ohoho")
 
 print("Hey how are you everyone")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # program 2
 # another sample  program
 # with break
@@ -45,15 +29,6 @@ while True:
         break  # break the loop when condition is met
     print(line)
 print("Done ")
-
-
-
-
-
-
-
-
-
 '''
 # program 3
 
