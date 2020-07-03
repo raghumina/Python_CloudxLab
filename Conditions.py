@@ -192,3 +192,15 @@ for val in "string":
     print(val)
 
 print("The end")
+
+
+
+# finding even and odd number from a list
+# list off given number
+
+numbers=[23,56,76,78,90,35,12,45]  #defined a list
+for i in numbers:   #for loop use to iterates each number
+    if(i%2)==0:
+        print (i, "is even")   #print even number
+    else:
+        print (i, "is odd")     #print odd number
