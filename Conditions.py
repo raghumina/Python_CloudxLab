@@ -174,7 +174,7 @@ print("First", istr)
 astr = "123"
 istr = int(astr)
 print("Second", istr)
-'''
+
 # Program 14
 astr = "Hello"
 istr = 0
@@ -203,4 +203,7 @@ for i in numbers:   #for loop use to iterates each number
     if(i%2)==0:
         print (i, "is even")   #print even number
     else:
+
         print (i, "is odd")     #print odd number
+
+'''
