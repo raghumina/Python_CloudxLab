@@ -1,2 +1,1 @@
-hello
- This is my sequence file
+this are the dna sequences on which i am working
