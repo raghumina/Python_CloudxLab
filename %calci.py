@@ -2,8 +2,7 @@
 # % calculator for school and college marks
 
 
-#numbers = int(input("Please enter your numbers: "))
-
+# numbers = int(input("Please enter your numbers: "))
 
 
 '''
@@ -39,25 +38,9 @@ def fact():
     print("Factorail of ", n, " is : ", factorial)
 
 fact()
-'''
-'''
-# or with recursive function
-num = int(input("enter number hgere "))
-def fact1(n):
-    if n == 1:
-        return 1
-    else:
-        return n * fact1(n-1)
-print("the factorial of",num,"is",fact1(num))
-'''
 
 
 
-
-
-
-
-'''
 
 # for fabionaciii series 
 
@@ -70,8 +53,8 @@ def fibonacci(n):
         return fibonacci(n - 1) + fibonacci(n - 2)
 
 
-number = int(input("Enter an integer: \t"))
+number = int(input("Enter an integer: "))
 for i in range(number):
     print(fibonacci(i))
-
 '''
+
