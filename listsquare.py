@@ -17,9 +17,4 @@ print(list2)
 # or with function
 
 add =  int(input("Enter numbers here: "))
-#list1 = []
-#print(list1)
-def list(add):
-    if add not in list1:
-        list1.append(add ** 2)
-        print(list1)
+
