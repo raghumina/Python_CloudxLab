@@ -133,9 +133,3 @@ for line in fh:
 
     print(line)
 '''
-import csv
-f1 = open('Sequence.txt','r+')
-f1.write("this are the dna sequences on which i am working")
-print(f1)
-# to read a file in our outbox
-print(f1.read())
