@@ -41,4 +41,27 @@ orders = {
 
 print(orders["Looney"]["drink"])  # to specifiy the dictionary
 
+# the key value in a dicitonary can be a list , tuple  and a dictionary
+# lets try to make a list in a dictionary
+food = {
+    "lion": "deer",
+    "deer": "grass",
+    "beer": ["grass", "honey", "insects", "fruits"]
+}
+
+print(food)
+print(food["beer"])  # cool so it worked
+
+# to add items in a dictionary both key and its values
+
+food["bat"] = "insects"
+print(food)
+
+# to remove a key and its value from  the dictionary
+
+del food["bat"]
+print(food)
+
+
+
 
