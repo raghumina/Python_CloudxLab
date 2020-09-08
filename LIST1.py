@@ -29,7 +29,6 @@ print(list1)
 # remove function removes the desired data from the list
 list1.remove("tommy")
 print(list1)
-'''
 
 # another one
 # .copy  function
@@ -42,3 +41,23 @@ print(list1)
 
 list1.clear()
 print(list1)  # clears the list, all the data in the list will we vanished or cleared
+'''
+
+# lets create a new list
+
+list1 = ["messi", 10, 20, "tiom"]
+for i in list1:
+    if i == "messi":
+        print("create another list")
+
+# lets creaTE A ANOTHER LIST
+# and try some new function
+
+num = [1, 2, 3, 4, 5, 6, 7, 87, 9, 0]
+num.reverse()
+print(num)
+num.sort()  # it will sort all the number or data
+num.reverse()  # this will reverse all the numbers
+print(num)
+
+print(num.count(22))  # it will count the given data in a list if it is available
