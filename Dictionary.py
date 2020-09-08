@@ -62,6 +62,15 @@ print(food)
 del food["bat"]
 print(food)
 
+#  creates copy of the dictionary
+food1 = food
+print(food1.copy())  # we can del a item in copied file it will not effect the main file but if we do a, a = b and make some changes in b it will also affects the a
+
+del food1["beer"]
+
+## problem 1
+# create a dictionary and take input from the user and return the meaning of the word from dictionary
+# for ex make a virtual dictionary on python
 
 
 
