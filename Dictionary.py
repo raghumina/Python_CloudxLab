@@ -20,9 +20,25 @@ print(dict1)
 
 # most of the functions are similar to the other data types
 
-print(dict1["Class"])   # to access the class value
-print(dict1.values())     # it will print all the value of the dictionary (key values )
-print(dict1.keys())    # it will print all key names of the dictionary
+print(dict1["Class"])  # to access the class value
+print(dict1.values())  # it will print all the value of the dictionary (key values )
+print(dict1.keys())  # it will print all key names of the dictionary
 
-print(dict1.popitem())    # it will show the last item of the dictionary
-print(dict1.get("Roll number"))   # to get the roll number or required data 
+print(dict1.popitem())  # it will show the last item of the dictionary
+print(dict1.get("Roll number"))  # to get the roll number or required data
+
+# dictionary in a dictionary
+
+orders = {
+    "Tom": "Burger",
+    "Jerry": "Pasta",
+    "Doggo": "fries",
+    "Looney": {"veg": "Pizza",
+               "nonveg": "Chicken",
+               "drink": "cola"
+               }
+}
+
+print(orders["Looney"]["drink"])  # to specifiy the dictionary
+
+
