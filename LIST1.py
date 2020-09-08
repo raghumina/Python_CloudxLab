@@ -61,3 +61,23 @@ num.reverse()  # this will reverse all the numbers
 print(num)
 
 print(num.count(22))  # it will count the given data in a list if it is available
+
+num.insert(2,"tom")   # it will insert the value on the given location
+print(num)
+
+num.pop()     # it will remove the last value of the list
+print(num)
+
+num.remove("tom")
+print(num)
+
+# lets use slicing with the list
+
+print(num)
+print(num[0])   # prints the 0th value on the list
+print(num[3])
+
+print(num[1:4])
+
+print(len(num))    # to check the length of the list
+
