@@ -62,10 +62,10 @@ print(num)
 
 print(num.count(22))  # it will count the given data in a list if it is available
 
-num.insert(2,"tom")   # it will insert the value on the given location
+num.insert(2, "tom")  # it will insert the value on the given location
 print(num)
 
-num.pop()     # it will remove the last value of the list
+num.pop()  # it will remove the last value of the list
 print(num)
 
 num.remove("tom")
@@ -74,10 +74,18 @@ print(num)
 # lets use slicing with the list
 
 print(num)
-print(num[0])   # prints the 0th value on the list
+print(num[0])  # prints the 0th value on the list
 print(num[3])
 
 print(num[1:4])
 
-print(len(num))    # to check the length of the list
+print(len(num))  # to check the length of the list
 
+# special in slicing
+# if we want to jump numbers or data in a sequence we use
+
+print(num[::2])  # this will print all the data form 2 space or values
+
+# we  can also set a range with it for example
+#
+print(num[1:5:2])  # so it will take the values form 1 t o5 and and them jump form 2-2 values
