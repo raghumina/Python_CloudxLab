@@ -104,3 +104,21 @@ else:
     print("all are equal ")
 '''
 
+#
+
+list1 = [11, 33, 22, 33, 43, 21, 3, 45, 54]
+if 11 in list1:
+    print("number is present")
+
+for number in list1:
+    if number > 15:
+        print(number)
+
+if 54 not in list1:  # print statement depends upon the condition
+    print("not available ")
+
+
+# lets try to make a calculator
+
+#
+
