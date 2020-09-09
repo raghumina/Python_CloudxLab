@@ -126,13 +126,24 @@ num2 = int(input("Enter number 2: "))
 operator = input("Put a operator: ")
 
 if operator == "+":
-    print(num1 + num2)
+    if num1 == 56 and num2 == 9:
+        print("77")
+    else:
+        print(num1 + num2)
+
 elif operator == "*":
-    print(num1 * num2)
+    if num1 == 45 and num2 == 3:
+        print("555")
+    else:
+        print(num1 * num2)
+elif operator == "/":
+    if num1 == 56 and num2 == 6:
+        print("6")
+    else:
+        print(num1 / num2)
 elif operator == "-":
     print(num1 - num2)
-elif operator == "//":  # modulus operator
+elif operator == "//":  # floor division operator
     print(num1 // num2)
 elif operator == "**":  # power operator
     print(num1 ** num2)
-   
