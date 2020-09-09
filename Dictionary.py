@@ -73,4 +73,14 @@ del food1["beer"]
 # for ex make a virtual dictionary on python
 
 
+dicti1 = {
+    "mutate": "evolve or change",
+    "ordered": "in a sequence",
+    "set": "collection of data",
+    "regular": "consistant",
+    "space":"gap",
+    "flexiblity" : "range of movement "
+}
 
+words = input("please enter yopur word here ")
+print(dicti1[words])
