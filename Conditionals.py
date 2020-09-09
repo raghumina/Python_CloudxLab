@@ -119,7 +119,8 @@ if 54 not in list1:  # print statement depends upon the condition
 
 '''
 # lets try to make a calculator
-# a faulty calculator which gives the wrong output for specific numbers and operator 
+# a faulty calculator which gives the wrong output for specific numbers and operator
+# conditions are available in the code 
 #
 num1 = int(input("Enter number 1: "))
 num2 = int(input("Enter number 2: "))
