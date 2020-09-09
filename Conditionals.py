@@ -71,7 +71,7 @@ else:
 # e. 60 to 80 - B
 # f. Above 80 - A
 # Ask user to enter marks and print the corresponding grade.
-
+'''
 marks = int(input("Enter Marks here : "))
 if marks < 25:
     print("the grade is F")
@@ -85,3 +85,25 @@ elif marks >=60 and marks < 80:
     print("the grade is B")
 else:
     print("the grade is A")
+    
+'''
+# NEXT PROBLEM
+# Take input of age of 3 people by user and determine oldest and youngest among them.
+a = age1 = int(input("Enter age here : "))
+b = age2 = int(input("Enter age here : "))
+c = age3 = int(input("Enter age here : "))
+
+if a > b and a > c:
+    print("A is oldest ")
+elif b > a and b > a:
+    print("B is oldest")
+elif a == b and a == c:
+    print("equal age")
+elif a == b and a == b > c:
+    print("a and b are of equal age and older than c")
+elif a==c and a == c > b:
+    print("and and c are of equal age and older than b ")
+elif b == c and b == c > a:
+    print("b and c are of equal age and are older than a ")
+else:
+    print("c is oldest")
