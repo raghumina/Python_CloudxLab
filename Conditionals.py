@@ -38,15 +38,26 @@ elif breadth > length or breadth < length:    # we dont need this condition stil
     print("this is rectange ")
 '''
 # another problem
-# A shop will give discount of 10% if the cost of purchased quantity is more than 1000.
+# A shop will give discount of 10% if the cost of purchased price is more than 1000.
 # Ask user for quantity
 # Suppose, one unit will cost 100.
 # Judge and print total cost for user
-
-quantity = int(input("Enter quantity here"))
+'''
+quantity = int(input("Enter quantity here : "))
 cost = 100 # for each quantity
-if quantity > 1000:
-    price = cost * quantity
-    discount_price1= price * .10
-    print(price)
+if quantity*100 > 1000:
+    print("the cost is", (quantity*100) - (.1*quantity*100))
+'''
 
+# the next problem is
+#  company decided to give bonus of 5% to employee if his/her year of service is more than 5 years.
+# Ask user for their salary and year of service and print the net bonus amount.
+
+year_of_service = int(input("Enter years here : "))
+salary = float(input("Enter salary here : "))
+if year_of_service > 5:
+    print("bonus is", .5 * salary)
+elif year_of_service == 5:
+    print("one more year till bonus")
+else:
+    print("no bonus")
