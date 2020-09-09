@@ -97,13 +97,7 @@ if a > b and a > c:
     print("A is oldest ")
 elif b > a and b > a:
     print("B is oldest")
-elif a == b and a == c:
-    print("equal age")
-elif a == b and a == b > c:
-    print("a and b are of equal age and older than c")
-elif a==c and a == c > b:
-    print("and and c are of equal age and older than b ")
-elif b == c and b == c > a:
-    print("b and c are of equal age and are older than a ")
+elif c > a and c > b:
+    print(" c is oldest ")
 else:
-    print("c is oldest")
+    print("all are equal ")
