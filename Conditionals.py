@@ -28,12 +28,25 @@ else :
 '''
 # lets try another problem
 # Take value of length and breadth and decide weather it is rectangle or not
-
+'''
 length = float(input("Enter length here : "))
 breadth = float(input("Enter breadth here : "))
 
 if breadth == length:
     print("It is a square")
-elif breadth > length or breadth < length:
+elif breadth > length or breadth < length:    # we dont need this condition still i put it for fun :) :)
     print("this is rectange ")
+'''
+# another problem
+# A shop will give discount of 10% if the cost of purchased quantity is more than 1000.
+# Ask user for quantity
+# Suppose, one unit will cost 100.
+# Judge and print total cost for user
+
+quantity = int(input("Enter quantity here"))
+cost = 100 # for each quantity
+if quantity > 1000:
+    price = cost * quantity
+    discount_price1= price * .10
+    print(price)
 
