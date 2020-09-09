@@ -105,7 +105,7 @@ else:
 '''
 
 #
-
+'''
 list1 = [11, 33, 22, 33, 43, 21, 3, 45, 54]
 if 11 in list1:
     print("number is present")
@@ -117,8 +117,22 @@ for number in list1:
 if 54 not in list1:  # print statement depends upon the condition
     print("not available ")
 
-
+'''
 # lets try to make a calculator
 
 #
+num1 = int(input("Enter number 1: "))
+num2 = int(input("Enter number 2: "))
+operator = input("Put a operator: ")
 
+if operator == "+":
+    print(num1 + num2)
+elif operator == "*":
+    print(num1 * num2)
+elif operator == "-":
+    print(num1 - num2)
+elif operator == "//":  # modulus operator
+    print(num1 // num2)
+elif operator == "**":  # power operator
+    print(num1 ** num2)
+   
