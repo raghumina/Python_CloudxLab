@@ -64,7 +64,8 @@ print(food)
 
 #  creates copy of the dictionary
 food1 = food
-print(food1.copy())  # we can del a item in copied file it will not effect the main file but if we do a, a = b and make some changes in b it will also affects the a
+print(
+    food1.copy())  # we can del a item in copied file it will not effect the main file but if we do a, a = b and make some changes in b it will also affects the a
 
 del food1["beer"]
 
@@ -78,9 +79,11 @@ dicti1 = {
     "ordered": "in a sequence",
     "set": "collection of data",
     "regular": "consistant",
-    "space":"gap",
-    "flexiblity" : "range of movement "
+    "space": "gap",
+    "flexiblity": "range of movement "
 }
 
 words = input("please enter yopur word here ")
 print(dicti1[words])
+
+# problem solved
