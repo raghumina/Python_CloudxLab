@@ -152,7 +152,6 @@ elif operator == "**":  # power operator
     print(num1 ** num2)
 '''
 
-
 # another problem
 # Write a program to print absolute vlaue of a number entered by user. E.g.-
 # INPUT: 1        OUTPUT: 1
@@ -188,4 +187,17 @@ else:
 '''
 
 # lets try another problem
+# Modify the above question to allow student to sit if he/she has medical cause.
+# Ask user if he/she has medical cause or not ( 'Y' or 'N' ) and print accordingly.
 
+class_held = int(input("Enter number of classes held: "))
+class_atten = int(input("Enter number of classes attended: "))
+medical_cause = str.upper(input("Enter medical cause = 'Y' and no medical cause = 'N': "))
+percentage = class_atten * 100 / class_held
+print(float(percentage), "%")
+if percentage >= 75:
+    print("Allowed")
+elif percentage < 75 and medical_cause == "Y":
+    print("Allowed")
+else:
+    print("Not allowed")
