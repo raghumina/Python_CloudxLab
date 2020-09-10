@@ -157,9 +157,35 @@ elif operator == "**":  # power operator
 # Write a program to print absolute vlaue of a number entered by user. E.g.-
 # INPUT: 1        OUTPUT: 1
 # INPUT: -1        OUTPUT: 1
-
+'''
 num = int(input("Enter number here"))
 if num < 0:
     print(num*-1)
 else:
     print(num)
+'''
+
+# another problem
+#
+# A student will not be allowed to sit in exam if his/her attendence is less than 75%.
+# Take following input from user
+# Number of classes held
+# Number of classes attended.
+# And print
+# percentage of class attended
+# Is student is allowed to sit in exam or not
+'''
+#
+classes = int(input("Please enter the number of classes held: "))
+attended = int(input("Number of classes attended: "))
+percentage = attended * 100 / classes
+print(float(percentage), "%")
+if percentage >= 75:
+    print("Allowed")
+
+else:
+    print("Not allowed ")
+'''
+
+# lets try another problem
+
