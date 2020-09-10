@@ -122,6 +122,8 @@ if 54 not in list1:  # print statement depends upon the condition
 # a faulty calculator which gives the wrong output for specific numbers and operator
 # conditions are available in the code 
 #
+
+'''
 num1 = int(input("Enter number 1: "))
 num2 = int(input("Enter number 2: "))
 operator = input("Put a operator: ")
@@ -148,3 +150,16 @@ elif operator == "//":  # floor division operator
     print(num1 // num2)
 elif operator == "**":  # power operator
     print(num1 ** num2)
+'''
+
+
+# another problem
+# Write a program to print absolute vlaue of a number entered by user. E.g.-
+# INPUT: 1        OUTPUT: 1
+# INPUT: -1        OUTPUT: 1
+
+num = int(input("Enter number here"))
+if num < 0:
+    print(num*-1)
+else:
+    print(num)
