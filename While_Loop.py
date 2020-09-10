@@ -10,7 +10,9 @@ while a < 20:
 #
 a = 10
 count = 0
-while a < 20:                        # now it runs until the provided condition gets true 
+while a < 20:  # now it runs until the provided condition gets true
     a = a + 1
     count = count + 1
-    print(count,"yoho")
+    print(count, "yoho")
+
+# this loop is similar to the for loop in many ways
