@@ -22,15 +22,21 @@ while a < 20:  # now it runs until the provided condition gets true
 # problem 1
 # guess a number game
 # lets start
+num = 20
+guesses = 1
+while guesses <= 10:
+    user_input = int(input("Enter number here: "))
+    if user_input > num:
+        print("Please guess a smaller number :")
+    elif user_input < num:
+        print("Please guess a bigger number ")
+    else:
+        print("you won")
+        print(guesses,"number of guesses you took to win ")
+        break
+    print(10-guesses,"number of guesses left")
+    guesses = guesses + 1
 
-number = 20
-guess = int(input("Please enter a number: "))
-for guess in range(10, 30):
-    if guess == number:
+if guesses > 10:
+    print("game over ")
 
-        print("correct guess")
-        continue
-    elif guess >= 30:
-        print("please guess a smaller number")
-    elif guess <= 10:
-        print("please guess a smaller number ")
