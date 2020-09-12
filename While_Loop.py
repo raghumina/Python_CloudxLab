@@ -19,24 +19,21 @@ while a < 20:  # now it runs until the provided condition gets true
 
 '''
 ##
-# problem 1
-# guess a number game
-# lets start
-num = 20
-guesses = 1
-while guesses <= 10:
-    user_input = int(input("Enter number here: "))
-    if user_input > num:
-        print("Please guess a smaller number :")
-    elif user_input < num:
-        print("Please guess a bigger number ")
+number = 10
+guesses = 8
+
+while guesses < 8:
+    input1 = int(input("Enter your number here: "))
+    if input1 > number:
+
+        print("Guess a smaller number")
+    elif input1 < number:
+        print("guess a smaller number")
     else:
         print("you won")
-        print(guesses,"number of guesses you took to win ")
+        print(guesses, "no of guesses you have taken ")
         break
-    print(10-guesses,"number of guesses left")
+    print(8 - guesses, "no of guesses left ")
     guesses = guesses + 1
-
-if guesses > 10:
+if guesses > 8:
     print("game over ")
-
