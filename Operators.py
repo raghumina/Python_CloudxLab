@@ -67,3 +67,15 @@ print(a and b)  # output will be false
 print(a or b)  # OUTPUT WILL BE TRUE
 print(a or a)  # output will still be true
 
+# identitiy operator
+print(a is b)  # false
+print(a is not b)  # true
+
+# membership operator
+#
+list1 = [11,22,3,3,444,55,6,7]
+print(212121 not in list1)       # false because it is not in list
+print(11 in list1)      # true because it is in list
+
+
+
