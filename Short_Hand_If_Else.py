@@ -22,4 +22,4 @@ print("a is greater")if a > b else print("b is greater ")
 # and another example is like
 
 num1 = int(input("Enter number: "))
-if num1 > 5: print("Ohk") 
+if num1 > 5: print("Ohk")
