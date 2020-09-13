@@ -17,23 +17,35 @@ while a < 20:  # now it runs until the provided condition gets true
 
 # this loop is similar to the for loop in many ways
 
-'''
-##
-number = 10
-guesses = 8
 
-while guesses < 8:
-    input1 = int(input("Enter your number here: "))
-    if input1 > number:
-
-        print("Guess a smaller number")
-    elif input1 < number:
-        print("guess a smaller number")
+# problem 1
+# guess a number game
+# lets start
+num = 20
+guesses = 1
+while guesses <= 10:
+    user_input = int(input("Enter number here: "))
+    if user_input > num:
+        print("Please guess a smaller number :")
+    elif user_input < num:
+        print("Please guess a bigger number ")
     else:
         print("you won")
-        print(guesses, "no of guesses you have taken ")
+        print(guesses,"number of guesses you took to win ")
         break
-    print(8 - guesses, "no of guesses left ")
+    print(10-guesses,"number of guesses left")
     guesses = guesses + 1
-if guesses > 8:
+if guesses > 10:
     print("game over ")
+'''
+# lets try another examples
+for i in range(9):
+    if i > 3:
+        break
+    print(i)
+
+list1 = [1,2,3,4,5,6,7,8,9,0]
+for item in list1:         # BREAK WILL BREAK THE LOOP IF CONDITION IS NOT MET
+    if item  < 5:          # BUT CONTINUE WILL LET IT RUN IF CONDITION IS OHK
+        continue
+    print(item)
