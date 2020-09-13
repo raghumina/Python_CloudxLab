@@ -37,7 +37,7 @@ while guesses <= 10:
     guesses = guesses + 1
 if guesses > 10:
     print("game over ")
-'''
+
 # lets try another examples
 for i in range(9):
     if i > 3:
@@ -49,3 +49,46 @@ for item in list1:         # BREAK WILL BREAK THE LOOP IF CONDITION IS NOT MET
     if item  < 5:          # BUT CONTINUE WILL LET IT RUN IF CONDITION IS OHK
         continue
     print(item)
+
+
+
+# lets again try guess the number problem
+
+
+'''
+print(''' THIS IS GUESS THE NUMBER GAME
+
+
+-----------------GUESS THE NUMBER :) :)------------------
+
+RULES:
+1. YOU GOT 9 CHANCES TO GUESS THE NUMBER
+IF YOU ARE UNABLE TO GUESS THE NUMBER IN 9 CHANCES YOU LOOSE 
+
+HINT: 
+1. THE NUMBER IS A TWO DIGIT NUMBER
+2. THE NUMBER IS SMALLER THAN 50
+3. THE NUMBER IS GREATER THAN 10
+
+   BEST OF LUCK
+''')
+
+print("Lets start")
+
+guesses = 1
+number = 30
+
+while guesses <= 9:
+    user_input = int(input("Enter the number: "))
+    if user_input > number:
+        print("No, guess a smaller number")
+    elif user_input < number:
+        print("No, guess a bigger number")
+    else:
+        print("---CONGRATS---YOU WON---")
+        print(guesses, "Total number of guesses you have taken")
+        break
+    print(9 - guesses, "number of guesses you have left")
+    guesses = guesses + 1
+if guesses > 9:
+    print("---YOU LOST---")
