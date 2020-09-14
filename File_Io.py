@@ -12,9 +12,17 @@
 "b" - binary mode used for file which have binary data
 
 '''
-
+'''
 # Lets create a text file with name python.txt
 f = open("python.txt")      # here now we opened a file
 content = f.read()         # use read() function to read the content of the file
 print(content)
+f.close()
+'''
+#  if i want to read this file as a binary file we will use "rb" means read as binary
+# lets try this
+f = open("python.txt","rb")
+content = f.read()
+print(content)
 
+#
