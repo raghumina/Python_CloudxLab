@@ -82,3 +82,8 @@ f.close()
 '''
 # and to read and write and both we use +
 # for example
+
+f = open("python.txt", "r+")
+print(f.read())
+f.write("this is one the best anime")
+f.close()
