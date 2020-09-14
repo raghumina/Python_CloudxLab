@@ -23,7 +23,7 @@ print("the average of user input is ", average)
 # how to see a dockstring
 print(average_no.__doc__)     # this is a docstring
 
-
+print(5 % 2)
 
 
 
