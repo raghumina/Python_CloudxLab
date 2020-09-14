@@ -10,7 +10,7 @@ try:
     print(sum)
 except:
     print("Give a numerical value")
-'''
+
 number1 = input("Enter number: ")
 
 
@@ -25,3 +25,11 @@ except Exception:
     number1 = int(input("Enter number: "))
     number2 = int(input("Enter number: "))
     print("correct input")
+
+'''
+# lets try an another example
+try:
+    print(x)
+except:
+    print("there is no variable such as x")
+    print("error occured")
