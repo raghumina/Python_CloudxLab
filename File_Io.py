@@ -21,8 +21,27 @@ f.close()
 '''
 #  if i want to read this file as a binary file we will use "rb" means read as binary
 # lets try this
+'''
 f = open("python.txt","rb")
 content = f.read()
 print(content)
+f.close()
+'''
+# we can use read() to read the specific amount of content
+# for example
+'''
+f = open("python.txt","r")
+content = f.read(10)    # lets say read 10 space worth of content
+print(content)          # it will only read the availablee data after that it will igonre the data 
+f.close()
+'''
+# to read the content of the file line by line
+# so lets start
 
-#
+f = open("python.txt")
+count = 0
+for line in f:
+    count = count + 1
+    #print(count,line)   # it applies \n by default which creates gapes between the lines so to remove this
+    print(count,line,end="")  # worked fine
+    
