@@ -26,10 +26,41 @@ except Exception:
     number2 = int(input("Enter number: "))
     print("correct input")
 
-'''
+
+
 # lets try an another example
 try:
     print(x)
 except:
     print("there is no variable such as x")
     print("error occured")
+
+
+try:  # multi exceptions  more than one exception
+    print(x)
+except NameError:
+    print("an exception has arrived")
+except NameError:
+    print("unknown exception arrived ")
+except:
+    print("unknown error")
+
+# we ca use else if there is no error
+try:
+    print("hello")
+except:
+    print("error arrived")
+else:
+    print("no error arrived ")
+'''
+
+#
+# finally
+# The finally block, if specified, will be executed regardless if the try block raises an error or not.
+
+try:
+    print(x)
+except:
+    print("error occured")
+finally:
+    print("just run dont care about it ")
