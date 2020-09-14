@@ -37,11 +37,48 @@ f.close()
 '''
 # to read the content of the file line by line
 # so lets start
-
+'''
 f = open("python.txt")
 count = 0
 for line in f:
     count = count + 1
     #print(count,line)   # it applies \n by default which creates gapes between the lines so to remove this
     print(count,line,end="")  # worked fine
-    
+
+# another way of readinf a file line byt line is
+f = open("python.txt")
+print(f.readline()) # we can write .readlines to read all the lines in a single line
+print(f.readline())
+print(f.readline())
+print(f.readline())
+print(f.readline())
+
+'''
+
+# read and write in a file
+# lets start
+# we have already seen how to read in a file
+# to write in a file we will use "w"
+'''
+f = open("python.txt",
+         "w")  # the read mode will dlete my existiong content and replace it with new one if we are applying "w on a existing file"
+f.write("My favourite Naruto Characters")  # and in new file it will simply add the data 
+print(f)
+'''
+
+# now what if we want to add content in the existing file
+# we use append or "a"
+# for example
+'''
+f = open("python.txt","a")
+f.write("Naruto\n")
+f.write("Kakashi\n")
+f.write("Minato")    # every time we palce enter  it will add content to the file
+# and to know how many  chatracters we have added we can use a
+# for example
+a = f.write("Rock lee")
+print(a)    # it will give a output 8 that we have added 8 characters to the file
+f.close()
+'''
+# and to read and write and both we use +
+# for example
