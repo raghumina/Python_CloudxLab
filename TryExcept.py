@@ -64,3 +64,13 @@ except:
     print("error occured")
 finally:
     print("just run dont care about it ")
+
+
+a = int(input())
+b = int(input())
+try:
+    print(a/b)
+except Exception as e:         # we use exception as e when we have to find about the occured error
+    print("can not divide by zero",    e)
+
+print("leave the loop ")
