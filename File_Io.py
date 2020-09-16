@@ -79,7 +79,7 @@ f.write("Minato")    # every time we palce enter  it will add content to the fil
 a = f.write("Rock lee")
 print(a)    # it will give a output 8 that we have added 8 characters to the file
 f.close()
-'''
+
 # and to read and write and both we use +
 # for example
 
@@ -87,3 +87,20 @@ f = open("python.txt", "r+")
 print(f.read())
 f.write("this is one the best anime")
 f.close()
+#
+# when to know where is the  file pointer
+f = open("python.txt")
+print(f.readline())
+print(f.read(10))   # to read the first 10 characters of the file or as many as characters as we wish
+print(f.tell()) # it tells about the current location of the file pointer
+'''
+
+# lets try something new
+f = open("Sequence.txt", "r+")
+content = f.read()
+#print(content)
+#count = 0
+for seq in content:
+   # count = count + 1
+    #print(count,seq,end=",")
+    print(seq.)
