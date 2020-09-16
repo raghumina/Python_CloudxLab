@@ -98,9 +98,9 @@ print(f.tell()) # it tells about the current location of the file pointer
 # lets try something new
 f = open("Sequence.txt", "r+")
 content = f.read()
-#print(content)
-#count = 0
+# to count the occurance of a character in the file
+count = 0
 for seq in content:
-   # count = count + 1
-    #print(count,seq,end=",")
-    print(seq.)
+    if seq == "A":
+        count = count + 1
+print(str(count))
