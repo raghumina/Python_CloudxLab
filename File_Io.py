@@ -113,3 +113,13 @@ seq2 = content.count("G")
 print("The count of G in the file1 is",seq)
 seq3 = content.count("C")
 print("The count of C in the file1 is",seq)
+
+# AND TO COUNT THE FREQUENCY OF EACH CHARACTER IN THE FILE IS
+content1 = {}
+for seq in content:
+    if seq in content1:
+        content1[seq] += 1
+    else:
+        content1[seq] = 1
+
+print(content1)
