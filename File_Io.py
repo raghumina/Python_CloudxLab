@@ -99,8 +99,17 @@ print(f.tell()) # it tells about the current location of the file pointer
 f = open("Sequence.txt", "r+")
 content = f.read()
 # to count the occurance of a character in the file
-count = 0
-for seq in content:
-    if seq == "A":
-        count = count + 1
-print(str(count))
+#count = 0
+#for seq in content:
+#    if seq == "A":
+#        count = count + 1
+#print(str(count))
+
+seq = content.count("A")
+print("The count of A in the file1 is",seq)
+seq1 = content.count("T")
+print("The count of T in the file1 is",seq)
+seq2 = content.count("G")
+print("The count of G in the file1 is",seq)
+seq3 = content.count("C")
+print("The count of C in the file1 is",seq)
