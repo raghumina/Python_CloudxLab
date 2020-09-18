@@ -123,11 +123,24 @@ for seq in content:
         content1[seq] = 1
 
 print(content1)
-'''
+
 #
 f = open("python.txt","r+")
 print(f.readline())
 print(f.readline())
-print(f.seek(0))    # the seek function puts the pointer on the described position like in my case it is 0
+print(f.seek(0))    # the seek function puts the pointer on the described position like in my case it is 0 that means from where you want to start your file
 print(f.readline())
 f.close()
+'''
+# with block in file Input and output
+# it is generally using the open function in a statement that means what we do in a file or in a statement will be in a statement
+# IT WILL NOT AFFECT THE COMPLETE PROGRAM
+# we dont need to use f.close with it when the statement ends the file closes automatically
+
+# for example
+with open("python.txt") as f:
+    print(f.readlines())  # it reads all the lines in one go
+
+
+
+
