@@ -93,7 +93,7 @@ f = open("python.txt")
 print(f.readline())
 print(f.read(10))   # to read the first 10 characters of the file or as many as characters as we wish
 print(f.tell()) # it tells about the current location of the file pointer
-'''
+
 
 # lets try something new
 f = open("Sequence.txt", "r+")
@@ -123,3 +123,11 @@ for seq in content:
         content1[seq] = 1
 
 print(content1)
+'''
+#
+f = open("python.txt","r+")
+print(f.readline())
+print(f.readline())
+print(f.seek(0))    # the seek function puts the pointer on the described position like in my case it is 0
+print(f.readline())
+f.close()
