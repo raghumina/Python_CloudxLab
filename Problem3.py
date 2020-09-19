@@ -1,5 +1,5 @@
 # health management system
-
+'''
 # Lets start
 def getdate():
     import datetime
@@ -69,23 +69,78 @@ def retriveData(num1,num2,num3):
         print(content6)
 
 
-print(''' THIS IS A HEALTH MANAGMENT SYSTEM
-YOU CAN STORE AND RETRIVE THE CLIENT DATA
-THIS MANAGMENT SYSTEM STORES THE CLIENT DIET AND EXERCISE DATA ''')
-
-print('''CLIENT CODES 
-1: TOM
-2: JERRY
-3: GOOFEY''')
-num1 = int(input("Please Enter client code, enter '1',or '2', or '3': "))
-print('''Enter which data you want
-1: diet
-2: exercise''')
-num2 = int(input("Enter 1 or 2: "))
-print('''Enter what do you want to do with that data
-1: Retrive 
-2: Append''')
-num3 = int(input("Enter 1 or 2: "))
 
 print(client_data_append(num1,num2,num3))
 print(retriveData(num1,num2,num3))
+
+KrishnaLive:
+1
+year
+ago
+
+'''
+
+def getdate():
+    import datetime
+    return datetime.datetime.now()
+
+
+def write_dirt(acess_client):
+    if acess_client in list_of_clients:
+        # print(list_of_clients[acess_client])
+        name = acess_client
+        extension = '.txt'
+        f = open(name + extension, 'a')
+        diet_list = input('enter today diet food : ')
+        print(name + 's diet table')
+        heading = 'Diet List and Time '
+        f.write(diet_list)
+        date = str(getdate())
+        f.write(' = ')
+        f.write(date)
+
+        print(getdate())
+        f.write('\n')
+        f.close()
+    else:
+        print('you have write incorrect name .. pleaese check')
+
+
+def write_exercise(acess_client):
+    if acess_client in list_of_clients:
+        # print(list_of_clients[acess_client])
+        name = acess_client
+        extension = '.txt'
+        f = open(name + extension, 'a')
+        exercise_list = input('enter today exercise name : ')
+        print(name + 's Exercise table')
+
+        f.write(exercise_list)
+        date = str(getdate())
+        f.write(' = ')
+        f.write(date)
+
+        print(getdate())
+        f.write('\n')
+        f.close()
+    else:
+        print('you have write incorrect name .. pleaese check')
+
+
+def read_files_of_clients(acess_client):
+    file_name = acess_client
+    extension = '.txt'
+    f = open(file_name + extension, 'rb')
+    print(f.readlines())
+    f.close()
+
+
+list_of_clients = ['harry', 'rohan', 'hamad']
+acess_client = input('enter names to select client and update databese : ')
+do_what = input('what you want to do with client ?  1 for diet 2 for exercise 3 for readfiles')
+if do_what == '1':
+    write_dirt(acess_client)
+if do_what == '2':
+    write_exercise(acess_client)
+if do_what == '3':
+    read_files_of_clients(acess_client)
