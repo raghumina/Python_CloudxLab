@@ -46,36 +46,37 @@ elif client_name1 in client_name and client_name1 == "JERRY" and action == 1 and
     content2 = f2.read()
     print(content2)
 
-elif client_name1 in client_name and client_name1 == "TOM" and action == 2 and action_type == 2:
-    f1 = open(client_name.txt)
-    content1 = f1.read("=")
-    print(content1)
+elif client_name1 in client_name and client_name1 == "JERRY" and action == 2 and action_type == 1:
+    f2 = open(client_name.txt)
+    content2 = f2.read("=")
+    print(content2)
 
-elif client_name1 in client_name and client_name1 == "TOM" and action == 2 and action_type == 2:
-    f1 = open(client_name.txt)
-    content1 = f1.read("=")
-    print(content1)
+elif client_name1 in client_name and client_name1 == "JERRY" and action == 2 and action_type == 2:
+    f2 = open(client_name.txt)
+    content2 = f2.read("=")
+    print(content2)
 
-elif client_name1 in client_name and client_name1 == "TOM" and action == 2 and action_type == 2:
-    f1 = open(client_name.txt)
-    content1 = f1.read("=")
-    print(content1)
+# for GOOFY
 
-elif client_name1 in client_name and client_name1 == "TOM" and action == 2 and action_type == 2:
-    f1 = open(client_name.txt)
-    content1 = f1.read("=")
-    print(content1)
+elif client_name1 in client_name and client_name1 == "GOOFY" and action == 1 and action_type == 1:
+    f3 = open(client_name.txt)
+    content3 = f3.read()
+    print(content3)
 
-elif client_name1 in client_name and client_name1 == "TOM" and action == 2 and action_type == 2:
-    f1 = open(client_name.txt)
-    content1 = f1.read("=")
-    print(content1)
+elif client_name1 in client_name and client_name1 == "GOOFY" and action == 1 and action_type == 2:
+    f3 = open(client_name.txt)
+    content3 = f3.read()
+    print(content3)
 
-elif client_name1 in client_name and client_name1 == "TOM" and action == 2 and action_type == 2:
-    f1 = open(client_name.txt)
-    content1 = f1.read("=")
-    print(content1)
+elif client_name1 in client_name and client_name1 == "GOOFY" and action == 2 and action_type == 1:
+    f3 = open(client_name.txt)
+    content3 = f3.read("=")
+    print(content3)
 
+elif client_name1 in client_name and client_name1 == "GOOFY" and action == 2 and action_type == 2:
+    f3 = open(client_name.txt)
+    content3 = f3.read("=")
+    print(content3)
 
 
 
