@@ -25,13 +25,13 @@ elif client_name1 in client_name and client_name1 == "TOM" and action == 1 and a
     print(content1)
 
 elif client_name1 in client_name and client_name1 == "TOM" and action == 2 and action_type == 1:
-    f1 = open("tom_diet.txt","w")
+    f1 = open("tom_diet.txt", "w")
     content1 = f1.write("")
     print(content1)
 
 elif client_name1 in client_name and client_name1 == "TOM" and action == 2 and action_type == 2:
-    f1 = open("tom_exercise.txt","w")
- #  diet = input()
+    f1 = open("tom_exercise.txt", "w")
+    #  diet = input()
     content1 = f1.write()
     print(content1)
 
@@ -48,12 +48,12 @@ elif client_name1 in client_name and client_name1 == "JERRY" and action == 1 and
     print(content2)
 
 elif client_name1 in client_name and client_name1 == "JERRY" and action == 2 and action_type == 1:
-    f2 = open("jerry_diet.txt","w")
+    f2 = open("jerry_diet.txt", "w")
     content2 = f2.read()
     print(content2)
 
 elif client_name1 in client_name and client_name1 == "JERRY" and action == 2 and action_type == 2:
-    f2 = open("jerry_exercise.txt","w")
+    f2 = open("jerry_exercise.txt", "w")
     content2 = f2.read("=")
     print(content2)
 
@@ -70,30 +70,14 @@ elif client_name1 in client_name and client_name1 == "GOOFY" and action == 1 and
     print(content3)
 
 elif client_name1 in client_name and client_name1 == "GOOFY" and action == 2 and action_type == 1:
-    f3 = open("goofy_diet.txt","w")
+    f3 = open("goofy_diet.txt", "w")
     content3 = f3.read("=")
     print(content3)
 
 elif client_name1 in client_name and client_name1 == "GOOFY" and action == 2 and action_type == 2:
-    f3 = open("goofy_exercise.txt","w")
+    f3 = open("goofy_exercise.txt", "w")
     content3 = f3.read("=")
     print(content3)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+else:
+    print("Enter names correctely")
