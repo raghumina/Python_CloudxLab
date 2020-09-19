@@ -16,7 +16,31 @@ def client_data(num1,num2):
         content = f
         print(content)
 
+    elif num1 == 1 and num2 == 2:
+        f = open("file1_exercise.txt", "r+")
+        content = f
+        print(content)
 
+    elif num1 == 1 and num2 == 2:
+        f = open("file1_exercise.txt", "r+")
+        content = f
+        print(content)
+
+
+    elif num1 == 1 and num2 == 2:
+        f = open("file1_exercise.txt", "r+")
+        content = f
+        print(content)
+
+    elif num1 == 1 and num2 == 2:
+        f = open("file1_exercise.txt", "r+")
+        content = f
+        print(content)
+        
+    elif num1 == 1 and num2 == 2:
+        f = open("file1_exercise.txt", "r+")
+        content = f
+        print(content)
 
 
 print(''' THIS IS A HEALTH MANAGMENT SYSTEM
