@@ -34,3 +34,4 @@ print('''Enter what do you want to do with that data
 1: Retrive 
 2: Append''')
 num3 = int(input("Enter 1 or 2: "))
+
