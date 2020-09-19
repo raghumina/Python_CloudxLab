@@ -6,15 +6,17 @@ def getdate():
     return datetime.datetime.now()
 
 
-def client(num):
-    if num == 1:
-        f1 = open("File1_exercise.txt", "r+")
-    elif num == 2:
-        f2 = open("file2.txt_exercise", "r+")
-    elif num == 3:
-        f3 = open("file3.txt_exercise", "r+")
-    else:
-        print("choose form above options ")
+def client_data(num1,num2):
+    if num1 == 1 and num2 == 1:
+        f = open("file1_diet.txt","r+")
+        content = f
+        print(content)
+    elif num1 == 1 and num2 == 2:
+        f = open("file1_exercise.txt","r+")
+        content = f
+        print(content)
+
+
 
 
 print(''' THIS IS A HEALTH MANAGMENT SYSTEM
