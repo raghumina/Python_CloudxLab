@@ -1,4 +1,4 @@
-'''
+
 # List in python are like arrays
 # they stores values of different types
 # such as string , int , float etc
