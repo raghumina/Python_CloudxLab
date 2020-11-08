@@ -51,7 +51,7 @@ for number in range (1,1000):
 
 
 print(list)
-'''
+
 # List problem
 # Define a function with the name str_list_func that takes an argument (assume str).
 # Interchanges the 1st and last letter of each word in that argument and then return the resulting string.
@@ -74,4 +74,5 @@ def str_list_func(s):
 print(str_list_func("hello"))
 
 x = "there are so many dogs here"
+
 print(x.split())
