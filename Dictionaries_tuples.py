@@ -1,7 +1,9 @@
 # Dictionaries and tuples in python
 p = "hello"
 print(len(p))
-'''
+
+
+
 names = ['harry', 'ron', 'guy', 'lee']
 print("hello", names)
 for names in names:
