@@ -132,3 +132,16 @@ df = df.set_index([df.index, 'Name'])
 df.index.names = ['Location', 'Name']
 df = df.append(pd.Series(data={'Cost': 3.00, 'Item Purchased': 'Kitty Food'}, name=('Store 2', 'Kevyn')))
 print(df)
+
+# import pandas as pd
+import pandas as pd
+
+# import numpy as np
+import numpy as np
+
+# simple array
+data = np.array(['g', 'e', 'e', 'k', 's'])
+
+# providing an index
+ser = pd.Series(data, index=[10, 11, 12, 13, 14])
+print(ser) 
