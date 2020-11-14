@@ -194,6 +194,18 @@ for val in "string":
 print("The end")
 
 
+def tri_recursion(k):
+  if(k > 0):
+    result = k + tri_recursion(k - 1)
+    print(result)
+  else:
+    result = 0
+  return result
+
+print("\n\nRecursion Example Results")
+tri_recursion(6)
+
+
 
 # finding even and odd number from a list
 # list off given number
