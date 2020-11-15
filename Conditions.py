@@ -205,7 +205,12 @@ def tri_recursion(k):
 print("\n\nRecursion Example Results")
 tri_recursion(6)
 
-
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+  print("i is no longer less than 6")
 
 # finding even and odd number from a list
 # list off given number
